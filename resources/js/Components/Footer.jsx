@@ -16,7 +16,7 @@ export default function Footer() {
                     <div className="bereikbaarheid">
                     <ul>
                         <li>
-                        <h5>We zijn bereikbaar op:</h5>
+                            <h5>We zijn bereikbaar op:</h5>
                         </li>
                         <li>Maandag: 17u00 - 22u00</li>
                         <li>Dinsdag: 17u00 - 22u00</li>

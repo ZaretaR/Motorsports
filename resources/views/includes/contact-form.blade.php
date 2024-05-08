@@ -21,7 +21,7 @@
     </div>
     <div>
         Email <br>
-        <input type="text" name="email" placeholder="john.doe@email.com" value="{{ old('email') }}"><br>
+        <input type="text" name="email" placeholder="johndoe@example.com" value="{{ old('email') }}"><br>
         @error('email')
             <span>{{ $message }}</span>
         @enderror

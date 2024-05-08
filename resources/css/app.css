@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #2c2c2c;
+}
+/*HEADER*/
+header > img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+li {
+    list-style: none;
+}
+a {
+    list-style: none;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+a:active {
+    color: #0166B1;
+    font-weight: bold;
+}
+a:hover {
+    color: #0166B1;
+    font-weight: bold;
+}
+nav ul li:last-child a {
+    color: #FFC72C;
+    font-weight: 800;
+}
+nav ul li:last-child a:hover {
+    color: #0166B1;
+    font-weight: 800;
+}
+header > h1 {
+    font-family: "Bebas Neue", sans-serif;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 120px;
+    font-weight: 900;
+    text-shadow: 5px 5px 0px rgba(218, 218, 218, 0.25);
+}
+header > button > .kalender-button {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    color: #FFC72C;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+header > button > .kalender-button:hover {
+    color: white;
+}
+header > i {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 54%;
+    left: 72%;
+    transform: translateX(50%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 1200px;
+    box-sizing: border-box;
+    z-index: 1;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+/*MOTORSPORT*/
+.motorsport .container > h3 {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 40px;
+    align-self: flex-end;
+}
+.motorsport .first-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.motorsport .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 700px;
+}
+.motorsport .text-content > ul {
+    list-style-type: none;
+}
+.motorsport .text-content > ul > li {
+    position: relative;
+}
+.motorsport .text-content > ul > li::before {
+    content: "●";
+    color: #0166B1;
+    position: absolute;
+    left: -20px;
+}
+.motorsport .first-section .image-normal {
+    margin-right: 50px;
+    width: auto;
+    max-width: 400px;
+    height: max-content;
+    margin-top: 25px;
+}
+.motorsport .image-shadow {
+    position: absolute;
+    left: 6%;
+    transform: translateX(20%);
+    opacity: 0.5;
+    z-index: -1;
+    filter: blur(5px);
+    width: 400px;
+    height: auto;
+}
+.motorsport .second-section {
+    margin-top: 50px;
+}
+.motorsport .images-second-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.motorsport .images-second-section img {
+    width: auto;
+    max-width: 400px;
+    height: max-content;
+    margin: 0 -10px;
+}
+.motorsport .images-second-section img:nth-child(2) {
+    width: auto;
+    max-width: 400px;
+    height: max-content;
+    position: relative;
+    top: -40px;
+}
+/*TRACKDAYS*/
+.trackdays .container > h3 {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: -50px;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+.trackdays .first-section p {
+    margin-bottom: 50px;
+}
+.trackdays .inhoud-first-section {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+.trackdays .inhoud-first-section > ul {
+    list-style-type: none;
+}
+.trackdays .inhoud-first-section > ul > li {
+    position: relative;
+}
+.trackdays .inhoud-first-section > ul > li::before {
+    content: "●";
+    color: #0166B1;
+    position: absolute;
+    left: -20px;
+}
+.trackdays .quote {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.trackdays .quote p {
+    text-align: center;
+    position: relative;
+}
+.trackdays .quote i {
+    text-align: center;
+    font-size: 50px;
+    padding: 0 25px 0 25px;
+}
+.trackdays .cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.trackdays .formules {
+    width: 1200px;
+}
+.trackdays .formules > ul {
+    list-style-type: none;
+}
+.trackdays .formules > ul > li {
+    position: relative;
+}
+.trackdays .formules > ul > li::before {
+    content: "●";
+    color: #0166B1;
+    position: absolute;
+    left: -20px;
+}
+.uitnodiging {
+    background-color: #FFC72C;
+}
+.uitnodiging p {
+    width: 1200px;
+    text-align: center;
+    padding: 50px;
+    font-weight: 500;
+}
+.interesse {
+    position: relative;
+    display: flex;
+    gap: 50px;
+}
+.interesse > img {
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    z-index: 1;
+}
+.interesse > p {
+    width: 700px;
+}
+.interesse .rechthoek {
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    width: 350px;
+    height: 220px;
+    border: 2px solid #0166b1;
+    padding: 20px;
+    z-index: 0;
+}
+.trackdays .interesse-kalender > button {
+    padding: 10px 20px;
+    background-color: #FFC72C;
+    border: none;
+    font-weight: 800;
+}
+.trackdays .interesse-kalender > button:hover {
+    background-color: #0166B1;
+    cursor: pointer;
+}
+.interesse-kalender-button {
+    text-decoration: none;
+    font-weight: 800;
+}
+.interesse-kalender-button:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+/*FOOTER*/
+footer {
+    background-color: #2c2c2c;
+    height: 50vh;
+    color: white;
+    position: sticky;
+}
+.gegevens-eerste-deel {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 300px;
+    width: 100%;
+}
+.lijn {
+    border-bottom: 1px solid white;
+    width: 1200px;
+    margin-top: 20px;
+}
+.gegevens-tweede-deel {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 800px;
+    width: 1200px;
+}
+.gegevens-tweede-deel p {
+    font-size: 10px;
+    align-self: center;
+}
+.gegevens-tweede-deel > img {
+    width: auto;
+    max-width: 200px;
+    height: auto;
+}
+/*TEAM*/
+.container-nav {
+    background-color: #2c2c2c;
+    height: 100px;
+}
+.meet-our-team > .container > h3 {
+    margin-top: 50px;
+}
+/*FIRST TEAM*/
+.our-team-first {
+    margin-top: 50px;
+    display: flex;
+}
+.our-team-first > img {
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+.our-team-first > ul {
+    width: 800px;
+}
+/*DRIVERS TEAM*/
+.our-team-drivers {
+    display: flex;
+    gap: 100px;
+}
+.luc-jansens > img, .jan-geunes > img {
+    border-radius: 50%;
+}
+.background-drivers {
+    background-color: #FFC72C;
+    height: 72vh;
+    width: 100%;
+}
+.background-drivers > .container > h3 {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+.our-team-drivers {
+    color: white;
+}
+.luc {
+    position: absolute;
+    transform: translate(270px, -300px);
+}
+.jan {
+    position: absolute;
+    transform: translate(-50px, -50px);
+}
+.luc-jansens {
+    width: 500px;
+}
+.jan-geunes {
+    width: 500px;
+}
+/*TECHNICAL TEAM*/
+.background-technical-team {
+    background-color: #2c2c2c;
+    height: 120vh;
+    width: 100%;
+}
+.background-technical-team > .container > h3 {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+.technical-team {
+    display: flex;
+}
+.technical-team img {
+    border-radius: 50%;
+}
+.technical-team h4 {
+    color: white;
+}
+.benny-lambrechts > h4 {
+    position: absolute;
+    transform: translate(-140px, -300px);
+}
+.benny-lambrechts {
+    width: 550px;
+}
+.bart-weeghmans > h4 {
+    position: absolute;
+    transform: translate(-100px, -50px);
+}
+.bart-weeghmans {
+    width: 550px;
+}
+.laurens-dujardin > h4 {
+    position: absolute;
+    transform: translate(290px, -80px);
+}
+.laurens-dujardin {
+    margin-top: 50px;
+    width: 500px;
+}
+.brecht-reynders > h4 {
+    position: absolute;
+    transform: translate(290px, -300px);
+}
+.brecht-reynders {
+    margin-top: 50px;
+    width: 450px;
+}
+/*PITSTOP TEAM*/
+.background-pitstop-assistance {
+    height: 65vh ;
+    color: #2c2c2c;
+}
+.background-pitstop-assistance h3 {
+    font-size: 40px;
+    font-weight: 800;
+}
+.pitstop-assistance img {
+    border-radius: 50%;
+}
+.pitstop-assistance > h4 {
+    position: absolute;
+    transform: translate(-120px, -70px);
+}
+.pitstop-assistance {
+    width: 800px;
+}
+/*PICTURES TEAM*/
+.background-pictures-team img {
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: -5px;
+}
+/*CONTACT*/
+.contact-formulier {
+    display: flex;
+    justify-content: space-between;
+}
+.map, .formulier {
+    flex: 1;
+}
+.map {
+    margin: 100px 50px 100px 100px;
+}
+.formulier {
+    margin: 100px 100px 100px 50px;
+}
+label {
+    font-weight: 600;
+}
+.formulier h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 0;
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 5px;
+    border: solid 1px #2c2c2c74;
+}
+textarea {
+    margin-top: 5px;
+    width: 400px;
+    padding: 5px;
+    border: solid 1px #2c2c2c74;
+}
+.verzenden {
+    margin-top: 25px;
+    width: 100px;
+    border: none;
+    background-color: #FFC72C;
+    font-weight: 600;
+    padding: 6px 12px;
+}
+.verzenden:hover {
+    background-color: #0166B1;
+    color: white;
+    cursor: pointer;
+}
+/*KALENDER*/
+.kalender {
+    background-color: white;
+    height: max-content;
+}
+/*BLOG*/
+.blog {
+    height: 100vh;
+}
+.blog-posts {
+    display: flex;
+}
+.post{
+    width: 300px;
+    border: solid 1px #2c2c2c;
+    padding: 20px;
+    margin-right: 50px;
+}
+.italic {
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 0;
+}
+.post i {
+    float: right;
+    margin-bottom: 10px;
+}
+/*PROFILE*/
+.inlog-formulier, .aanmeld-formulier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.inloggen, .aanmelden {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+.insurance {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+    border: solid 1px #2c2c2c74;
+}
+.inlog-knop, .aanmeld-knop {
+    margin-top: 25px;
+    width: 100px;
+    border: none;
+    background-color: #FFC72C;
+    font-weight: 600;
+    padding: 6px 12px;
+}
+.inlog-knop {
+    margin-left: 50%;
+}
+.inlog-knop:hover, .aanmeld-knop:hover {
+    background-color: #0166B1;
+    color: white;
+    cursor: pointer;
+}

@@ -26,4 +26,4 @@ Route::get('/calender', [CalenderController::class, "calender"]);
 Route::get('/blog', [BlogController::class, "blog"]);
 
 //Route::get('/', [LoginController::class, "login"]);
-//Route::get('/', [SignInController::class, "sing in"]);
+//Route::get('/', [SignInController::class, "singin"]);

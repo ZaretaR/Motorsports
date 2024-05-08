@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {return view('index');});
-Route::get('/team', function () {return view('team');});
-Route::get('/contact', function () {return view('contact');});
-Route::get('/kalender', function () {return view('kalender');});
-Route::get('/profile', function () {return view('profile');});
+Route::get('/', function () {return view('index');})->name('home');
+Route::get('/team', function () {return view('team');})->name('team');
+Route::get('/contact', function () {return view('contact');})->name('contact');
+Route::get('/kalender', function () {return view('kalender');})->name('kalender');
+Route::get('/blog', function () {return view('blog');})->name('blog');
+Route::get('/profile', function () {return view('profile');})->name('profile');

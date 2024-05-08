@@ -3,15 +3,10 @@ export default function Inloggen() {
         <div>
             <h3 className="inloggen">Inloggen</h3>
             <div className="aanmeld-formulier">
-                <form>
+                <form method="post" noValidate>
                     <label htmlFor="username">Gebruikersnaam</label>
                     <br />
                     <input type="text" className="username" id="username" placeholder="Gebruikersnaam" />
-                    <br />
-
-                    <label htmlFor="email">Email</label>
-                    <br />
-                    <input type="email" className="email" id="email"  placeholder="email@adres.com" />
                     <br />
 
                     <label htmlFor="password">Wachtwoord</label>

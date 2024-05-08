@@ -21,7 +21,7 @@ export default function Profile() {
                 className="inlog-knop"
                 onClick={toonInlogFormulier}
             >Inloggen</button>
-            {"/"}
+            {" "}
             <button
                 className="aanmeld-knop"
                 onClick={toonAanmeldFormulier}

@@ -268,7 +268,6 @@ header > i {
     padding: 10px 20px;
     background-color: #FFC72C;
     border: none;
-    border-radius: 20px;
     font-weight: 800;
 }
 .trackdays .interesse-kalender > button:hover {
@@ -480,24 +479,26 @@ input {
     margin-bottom: 10px;
     width: 400px;
     padding: 5px;
-    border-radius: 5px;
     border: solid 1px #2c2c2c74;
 }
 textarea {
     margin-top: 5px;
     width: 400px;
     padding: 5px;
-    border-radius: 5px;
     border: solid 1px #2c2c2c74;
 }
 .verzenden {
     margin-top: 25px;
     width: 100px;
-    border-radius: 15px;
     border: none;
     background-color: #FFC72C;
     font-weight: 600;
     padding: 6px 12px;
+}
+.verzenden:hover {
+    background-color: #0166B1;
+    color: white;
+    cursor: pointer;
 }
 /*KALENDER*/
 .kalender {
@@ -544,14 +545,13 @@ textarea {
     margin-bottom: 10px;
     width: 200px;
     padding: 5px;
-    border-radius: 5px;
     border: solid 1px #2c2c2c74;
 }
 .inlog-knop, .aanmeld-knop {
     margin-top: 25px;
     width: 100px;
     border: none;
-    background-color: transparent;
+    background-color: #FFC72C;
     font-weight: 600;
     padding: 6px 12px;
 }
@@ -559,6 +559,7 @@ textarea {
     margin-left: 50%;
 }
 .inlog-knop:hover, .aanmeld-knop:hover {
-    color: #FFC72C;
-    font-weight: bold;
+    background-color: #0166B1;
+    color: white;
+    cursor: pointer;
 }

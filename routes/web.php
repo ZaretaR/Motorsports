@@ -2,6 +2,7 @@
 
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TeamController;
@@ -26,3 +27,5 @@ Route::get('/Contact', [ContactController::class, "Contact"]);
 Route::get('/Calender', [CalenderController::class, "Calender"]);
 Route::get('/Blog', [BlogController::class, "Blog"]);
 Route::get('/Profile', [ProfileController::class, "Profile"]);
+Route::post('login', 'AuthController@login')->name('login');
+Route::post('register', 'AuthController@register')->name('register');

@@ -6,6 +6,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CalenderController;
 
 /*
@@ -20,10 +21,8 @@ use App\Http\Controllers\CalenderController;
 */
 
 Route::get('/', [HomeController::class, "index"]);
-Route::get('/team', [TeamController::class, "team"]);
-Route::get('/contact', [ContactController::class, "contact"]);
-Route::get('/calender', [CalenderController::class, "calender"]);
-Route::get('/blog', [BlogController::class, "blog"]);
-
-//Route::get('/', [LoginController::class, "login"]);
-//Route::get('/', [SignInController::class, "singin"]);
+Route::get('/Team', [TeamController::class, "Team"]);
+Route::get('/Contact', [ContactController::class, "Contact"]);
+Route::get('/Calender', [CalenderController::class, "Calender"]);
+Route::get('/Blog', [BlogController::class, "Blog"]);
+Route::get('/Profile', [ProfileController::class, "Profile"]);

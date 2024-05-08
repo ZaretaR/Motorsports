@@ -114,7 +114,7 @@ export default function HomeTrackdaysSection() {
                         </p>
                     </div>
                     <div className="interesse-kalender">
-                        <button>Bekijk de kalender</button>
+                        <button><a className="interesse-kalender-button" href="/Calender">Bekijk de kalender</a></button>
                     </div>
                 </div>
             </section>

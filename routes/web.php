@@ -22,6 +22,7 @@ use App\Http\Controllers\KalenderController;
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/team', [TeamController::class, 'team'])->name('team');
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
+Route::post('/contact', [ContactController::class, 'verzenden']);
 Route::get('/kalender', [KalenderController::class, 'kalender'])->name('kalender');
 Route::get('/blog', [BlogController::class, 'blog'])->name('blog');
 Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');

@@ -1,15 +1,39 @@
-<form>
-    <label for="naam">Naam</label><br>
-    <input type="text" name="naam" id="naam" placeholder="Naam"><br>
+<form method="post" action="/contact" novalidate>
+    @csrf
 
-    <label for="voornaam">Vooraam</label><br>
-    <input type="text" name="voornaam" id="voornaam" placeholder="Voornaam"><br>
+    @if (session('status'))
+        <p>{{ session('status') }}</p>
+    @endif
 
-    <label for="email">Email</label><br>
-    <input type="email" name="email" id="email" placeholder="email@adres.com"><br>
-
-    <label for="bericht">Bericht</label><br>
-    <textarea name="bericht" id="bericht" cols="30" rows="10"></textarea><br>
-
-    <input type="submit" value="Verzenden" class="verzenden">
+    <div>
+        Naam <br>
+        <input type="text" name="naam" placeholder="Naam" value="{{ old('naam') }}"><br>
+        @error('naam')
+            <span>{{ $message }}</span>
+        @enderror
+    </div>
+    <div>
+        Voornaam <br>
+        <input type="text" name="voornaam" placeholder="Voornaam" value="{{ old('voornaam') }}"><br>
+        @error('voornaam')
+            <span>{{ $message }}</span>
+        @enderror
+    </div>
+    <div>
+        Email <br>
+        <input type="text" name="email" placeholder="john.doe@email.com" value="{{ old('email') }}"><br>
+        @error('email')
+            <span>{{ $message }}</span>
+        @enderror
+    </div>
+    <div>
+        Bericht <br>
+        <textarea name="bericht" id="bericht" cols="30" rows="10" value="{{ old('bericht') }}"></textarea><br>
+        @error('bericht')
+            <span>{{ $message }}</span>
+        @enderror
+    </div>
+    <div>
+        <input type="submit" value="Verzenden" class="verzenden">
+    </div>
 </form>

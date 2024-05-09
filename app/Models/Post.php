@@ -9,10 +9,16 @@ class Post extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'administrator_id',
-        'title',
-        'description',
-        'picture',
-    ];
+    public function comments() {
+        return $this->hasMany(Comment::class);
+    }
+}
+
+class Comment extends Model
+{
+    use HasFactory;
+
+    public function post() {
+        return $this->belongsTo(Post::class);
+    }
 }

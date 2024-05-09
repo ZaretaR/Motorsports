@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PostsController extends Controller
 {
@@ -37,21 +38,24 @@ class PostsController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'picture' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            //'picture' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
+        $administratorId = Auth::id();
+
         $post = new Post();
-        if ($request->hasFile('picture')) {
-            $image = $request->file('picture');
-            $fileName = time() . '_' . $image->getClientOriginalName();
-            $image->storeAs('public/images', $fileName);
-            $post->picture = $fileName;
-        }
+        //if ($request->hasFile('picture')) {
+        //    $image = $request->file('picture');
+        //    $fileName = time() . '_' . $image->getClientOriginalName();
+        //    $image->storeAs('public/images', $fileName);
+        //    $post->picture = $fileName;
+        //}
         $post->title = $request->title;
         $post->description = $request->description;
+        $post->administator_id = $administratorId;
         $post->save();
 
-        return redirect('/posts' . $post->id);
+        return redirect('/posts/' . $post->id);
     }
 
     /**

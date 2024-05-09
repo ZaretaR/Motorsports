@@ -25,10 +25,9 @@ Route::get('/team', [TeamController::class, 'team'])->name('team');
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'verzenden']);
 Route::get('/kalender', [KalenderController::class, 'kalender'])->name('kalender');
-Route::get('/blog', [BlogController::class, 'blog'])->name('blog');
 Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
 
-//POSTS
+//BLOG -> POSTS
 Route::get('/posts', [PostsController::class, 'index'])->name('posts.index');
 Route::post('/posts', [PostsController::class, 'store'])->name('posts.store');
 Route::get('/posts/create', [PostsController::class, 'create'])->name('posts.create');

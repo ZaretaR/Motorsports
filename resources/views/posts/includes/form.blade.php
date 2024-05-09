@@ -1,20 +1,21 @@
 <div>
     Titel <br>
-    <input type="text" name="titel" id="titel" value="{{ old('title', $post->title) }}">
-    @error('titel')
+    <input type="text" name="title" id="title" value="{{ old('title', $post->title) }}">
+    @error('title')
         <span>{{ $message }}</span>
     @enderror
 </div>
 
+
 <div>
     Afbeelding uploaden <br>
-    <input type="file" id="afbeelding" name="afbeelding" accept="image/*">
+    <input type="file" id="picture" name="picture" accept="image/*">
 </div>
 
 <div>
     Beschrijving <br>
-    <input type="text" name="beschrijving" id="beschrijving" value="{{ old('beschrijving', $post->description) }}">
-    @error('beschrijving')
+    <input type="text" name="description" id="description" value="{{ old('description', $post->description) }}">
+    @error('description')
         <span>{{ $message }}</span>
     @enderror
 </div>

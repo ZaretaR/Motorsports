@@ -13,7 +13,7 @@
         <img src="images/achtergrond.jpg" alt="achtergrond">
         @include('includes/nav')
         <h1>GRT MOTORSPORTS</h1>
-        <button>Bekijk onze kalender</button>
+        <button><a href="{{ route('kalender') }}">Bekijk onze kalender</a></button>
         <i class="fa-solid fa-arrow-pointer" style="color: #ffffff;"></i>
     </header>
 

@@ -265,25 +265,18 @@ header > i {
     padding: 20px;
     z-index: 0;
 }
-.trackdays .interesse-kalender > button {
+.trackdays .interesse-kalender > a {
     padding: 10px 20px;
     background-color: #FFC72C;
     border: none;
+    color: #2c2c2c;
+    text-decoration: none;
     font-weight: 800;
 }
-.trackdays .interesse-kalender > button:hover {
+.trackdays .interesse-kalender > a:hover {
     background-color: #0166B1;
     color: white;
     cursor: pointer;
-}
-.interesse-kalender-button {
-    text-decoration: none;
-    font-weight: 800;
-}
-.interesse-kalender-button:hover {
-    text-decoration: none;
-    color: white;
-    font-weight: 800;
 }
 /*FOOTER*/
 footer {

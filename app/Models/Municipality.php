@@ -9,8 +9,6 @@ class Municipality extends Model
 {
     use HasFactory;
 
-    protected $table ='municipalities';
-
     protected $fillable = [
         'postal_code',
         'name',

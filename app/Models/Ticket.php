@@ -9,8 +9,6 @@ class Ticket extends Model
 {
     use HasFactory;
 
-    protected $table = 'tickets';
-
     protected $fillable = [
         'event_id',
         'price',

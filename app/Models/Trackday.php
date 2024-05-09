@@ -9,8 +9,6 @@ class Trackday extends Model
 {
     use HasFactory;
 
-    protected $table = 'trackdays';
-
     protected $fillable = [
         'date',
         'customer_id',

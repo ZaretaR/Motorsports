@@ -9,8 +9,6 @@ class Instructor extends Model
 {
     use HasFactory;
 
-    protected $table = 'instructors';
-
     protected $fillable = [
         'name',
         'first_name',

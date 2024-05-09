@@ -9,8 +9,6 @@ class Insurance extends Model
 {
     use HasFactory;
 
-    protected $table = 'insurances';
-
     protected $fillable = [
         'insurance_type',
     ];

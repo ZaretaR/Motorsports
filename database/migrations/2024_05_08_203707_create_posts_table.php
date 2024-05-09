@@ -16,7 +16,6 @@ return new class extends Migration
             $table->unsignedBigInteger('administator_id');
             $table->string('title');
             $table->string('description');
-            $table->date('date');
             $table->timestamps();
         });
     }

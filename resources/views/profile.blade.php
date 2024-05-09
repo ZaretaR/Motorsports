@@ -15,7 +15,35 @@
         </div>
     </header>
 
+    <button class="inlog-knop">Inloggen</button>
+    <button class="aanmeld-knop">Aanmelden</button>
+
+    @include('profile.inlog-section')
+    @include('profile.aanmeld-section')
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.inlog-knop').click();
+        })
+
+        const aanmeldKnop = document.querySelector('.aanmeld-knop');
+        const inlogKnop = document.querySelector('.inlog-knop');
+        const aanmeldSection = document.querySelector('.aanmeld-formulier');
+        const inlogSection = document.querySelector('.inlog-formulier');
+
+        aanmeldKnop.addEventListener('click', () => {
+            aanmeldSection.classList.remove('hidden');
+            inlogSection.classList.add('hidden');
+        });
+
+        inlogKnop.addEventListener('click', () => {
+            aanmeldSection.classList.add('hidden');
+            inlogSection.classList.remove('hidden');
+        });
+    </script>
+
     @include('includes/footer')
 </body>
+
 
 </html>

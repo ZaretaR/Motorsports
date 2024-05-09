@@ -582,3 +582,8 @@ textarea {
     color: white;
     cursor: pointer;
 }
+/*ERRORS*/
+span {
+    color: red;
+    font-size: 12px;
+}

@@ -555,23 +555,21 @@ textarea {
     padding: 5px;
     border: solid 1px #2c2c2c74;
 }
-.inlog-knop, .aanmeld-knop {
-    margin-top: 25px;
-    width: 100px;
-    border: none;
-    background-color: transparent;
-    font-weight: 600;
-    padding: 6px 12px;
-    font-size: 15px;
-}
-.inlog-knop {
-    margin-left: 50%;
-}
-.inlog-knop:hover, .aanmeld-knop:hover {
-    color: #0166B1;
-    cursor: pointer;
-}
-.geen-account {
+.geen-account, .wel-account {
     display: flex;
     justify-content: center;
+    margin: 0 0 25px 0;
+}
+.geen-account > p > button, .wel-account > p > button {
+    background-color: transparent;
+    border: none;
+}
+.geen-account > p > button > a, .wel-account > p > button > a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-weight: 600;
+    font-size: 15px;
+}
+.geen-account > p > button > a:hover, .wel-account > p > button > a:hover {
+    color: #0166B1;
 }

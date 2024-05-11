@@ -36,4 +36,5 @@ Route::post('/posts/{id}', [PostsController::class, 'update'])->name('posts.upda
 Route::delete('/posts/{id}', [PostsController::class, 'destroy'])->name('posts.destroy');
 Route::get('/posts/{id}/edit', [PostsController::class, 'edit'])->name('posts.edit');
 
-//PROFILE
+//PROFILE -> AANMELDEN
+Route::get('/profile/aanmelden', [ProfileController::class, 'aanmelden'])->name('aanmelden');

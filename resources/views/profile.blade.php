@@ -20,11 +20,14 @@
 
     @include('profile/inlog-section')
     <section class="geen-account">
-        <p>Nog geen account?<button class="aanmeld-knop">Aanmelden</button></p>
+        <p>Nog geen account?
+            <button class="aanmeld-knop">
+                <a href="{{ route('aanmelden') }}">Aanmelden</a>
+            </button>
+        </p>
     </section>
 
     @include('includes/footer')
 </body>
-
 
 </html>

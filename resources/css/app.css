@@ -544,13 +544,21 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin: 50px 0 10px 0;
 }
 .inloggen, .aanmelden {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
     margin-top: 50px;
+    background-color: #FFC72C;
+    border: none;
+    font-weight: 800;
+}
+.inloggen:hover, .aanmelden:hover {
+    background-color: #0166B1;
+    color: white;
+    font-weight: 800;
 }
 .insurance {
     margin-top: 5px;
@@ -559,21 +567,23 @@ textarea {
     padding: 5px;
     border: solid 1px #2c2c2c74;
 }
-.inlog-knop, .aanmeld-knop {
-    margin-top: 25px;
-    width: 100px;
+.geen-account, .wel-account {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 25px 0;
+}
+.geen-account > p > button, .wel-account > p > button {
+    background-color: transparent;
     border: none;
-    background-color: #FFC72C;
+}
+.geen-account > p > button > a, .wel-account > p > button > a {
+    text-decoration: none;
+    color: #2c2c2c;
     font-weight: 600;
-    padding: 6px 12px;
+    font-size: 15px;
 }
-.inlog-knop {
-    margin-left: 50%;
-}
-.inlog-knop:hover, .aanmeld-knop:hover {
-    background-color: #0166B1;
-    color: white;
-    cursor: pointer;
+.geen-account > p > button > a:hover, .wel-account > p > button > a:hover {
+    color: #0166B1;
 }
 /*ERRORS*/
 span {

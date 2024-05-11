@@ -12,7 +12,3 @@
         @endif
     </ul>
 </nav>
-
-@if (Auth::check())
-    <p>Welkom, {{ Auth::user()->username }}</p>
-@endif

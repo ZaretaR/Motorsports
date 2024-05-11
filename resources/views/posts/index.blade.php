@@ -18,6 +18,9 @@
     <section class="blog">
         <div class="container">
             <h3>BLOGPOSTS</h3>
+            @if (Auth::check())
+                <p class="welkom">Welkom, {{ Auth::user()->username }}</p>
+            @endif
             <a href="{{ route('posts.create') }}" class="nieuwe-post">Nieuwe post toevoegen</a> <br>
             <div class="blog-posts">
                 <div class="post">

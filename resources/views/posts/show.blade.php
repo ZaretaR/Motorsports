@@ -29,8 +29,6 @@
         </div>
 
         <aside class="comments">
-            <h3>Comments</h3>
-            <p>{{ $post->comments }}</p>
             <p>{{ $post->likes }}</p>
         </aside>
 

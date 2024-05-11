@@ -1,9 +1,10 @@
 <div>
-    Titel <br>
-    <input type="text" name="title" id="title" value="{{ old('title', $post->title) }}">
+    Titel:
     @error('title')
         <span>{{ $message }}</span>
     @enderror
+    <br>
+    <input type="text" name="title" id="title" value="{{ old('title', $post->title) }}">
 </div>
 
 
@@ -13,13 +14,14 @@
 </div>
 
 <div>
-    Beschrijving <br>
-    <input type="text" name="description" id="description" value="{{ old('description', $post->description) }}">
+    Beschrijving:
     @error('description')
         <span>{{ $message }}</span>
     @enderror
+    <br>
+    <input type="text" name="description" id="description" value="{{ old('description', $post->description) }}">
 </div>
 
-<div><br>
-    <input type="submit" name="toevoegen" id="toevoegen" value="{{ $buttonText ?? 'Toevoegen' }}">
+<div>
+    <input class="toevoegen" type="submit" name="toevoegen" id="toevoegen" value="Toevoegen">
 </div>

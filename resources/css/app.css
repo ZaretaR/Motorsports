@@ -585,12 +585,31 @@ textarea {
 .geen-account > p > button > a:hover, .wel-account > p > button > a:hover {
     color: #0166B1;
 }
-/*ERRORS*/
 span {
     color: red;
     font-size: 12px;
 }
 .welkom {
     width: 1200px;
+    font-weight: 800;
+}
+.post-formulier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 10px 0;
+}
+.toevoegen {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: #FFC72C;
+    border: none;
+    font-weight: 800;
+}
+.toevoegen:hover {
+    background-color: #0166B1;
+    color: white;
     font-weight: 800;
 }

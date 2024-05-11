@@ -532,7 +532,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin: 50px 0 10px 0;
 }
 .inloggen, .aanmelden {
     display: flex;
@@ -559,15 +559,19 @@ textarea {
     margin-top: 25px;
     width: 100px;
     border: none;
-    background-color: #FFC72C;
+    background-color: transparent;
     font-weight: 600;
     padding: 6px 12px;
+    font-size: 15px;
 }
 .inlog-knop {
     margin-left: 50%;
 }
 .inlog-knop:hover, .aanmeld-knop:hover {
-    background-color: #0166B1;
-    color: white;
+    color: #0166B1;
     cursor: pointer;
+}
+.geen-account {
+    display: flex;
+    justify-content: center;
 }

@@ -1,3 +1,4 @@
+@include('includes/nav')
 <section class="inlog-formulier" id="inlog-formulier">
     <form action="/inloggen" method="post" novalidate>
         @csrf

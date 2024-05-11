@@ -18,11 +18,11 @@
     <!-- <button class="inlog-knop">Inloggen</button> -->
 
 
-    @include('profile/inlog-section')
+    @include('auth/login')
     <section class="geen-account">
         <p>Nog geen account?
             <button class="aanmeld-knop">
-                <a href="{{ route('aanmelden') }}">Aanmelden</a>
+                <a href="{{ route('register') }}">Aanmelden</a>
             </button>
         </p>
     </section>

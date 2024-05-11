@@ -13,6 +13,6 @@ class ProfileController extends Controller
 
     public function aanmelden()
     {
-        return view('profile.aanmeld-section');
+        return view('auth.aanmelden');
     }
 }

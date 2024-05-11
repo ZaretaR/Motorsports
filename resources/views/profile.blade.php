@@ -15,19 +15,7 @@
         </div>
     </header>
 
-    <!-- <button class="inlog-knop">Inloggen</button> -->
-
-
     @include('auth/login')
-    <section class="geen-account">
-        <p>Nog geen account?
-            <button class="aanmeld-knop">
-                <a href="{{ route('register') }}">Aanmelden</a>
-            </button>
-        </p>
-    </section>
-
-    @include('includes/footer')
 </body>
 
 </html>

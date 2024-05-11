@@ -37,4 +37,3 @@ Route::delete('/posts/{id}', [PostsController::class, 'destroy'])->name('posts.d
 Route::get('/posts/{id}/edit', [PostsController::class, 'edit'])->name('posts.edit');
 
 //PROFILE
-Route::get('pr')

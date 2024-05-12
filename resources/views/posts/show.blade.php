@@ -24,7 +24,7 @@
             <p class="likes-show">{{ $post->likes()->count() }} Likes</p>
             <h2 class="post-title">{{ $post->title }}</h2>
             <p>{{ $post->created_at }}</p>
-            <img style="max-width:200px" src="{{ asset('images/' . $post->picture) }}">
+            <img style="max-width:200px" src="{{ Storage::url('images/' . $post->image) }}">
             <p class="post-description">{{ $post->description }}</p>
             <div class="post-buttons">
                 <a class="bewerken" href="{{ route('posts.edit', $post->id) }}">Bewerken</a>
@@ -35,7 +35,6 @@
                 </form>
             </div>
         </div>
-
     </section>
     @include('includes/footer')
 

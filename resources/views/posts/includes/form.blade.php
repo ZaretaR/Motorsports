@@ -8,8 +8,12 @@
 </div>
 
 <div>
-    Afbeelding uploaden <br>
-    <input type="file" id="picture" name="picture" value="{{ old('picture') }}">
+    Afbeelding uploaden:
+    @error('image')
+        <span>{{ $message }}</span>
+    @enderror
+    <br>
+    <input type="file" id="image" name="image" value="{{ old('image') }}">
 </div>
 
 <div>

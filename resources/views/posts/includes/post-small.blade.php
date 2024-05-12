@@ -8,7 +8,7 @@
     @endif
     <h1>{{ $post->title }}</h1>
     <p>{{ $post->created_at }}</p>
-    <img style="max-width:500px" src="{{ asset('images/' . $post->picture) }}">
+    <img style="max-width:500px" src="{{ Storage::url('images/' . $post->image) }}">
     <div class="post-small-description">
         @if (strlen($post->description) > 100)
             {{ substr($post->description, 0, 100) }}...
@@ -21,13 +21,13 @@
 
     @if (auth()->user())
         @if ($post->likes()->where('user_id', auth()->user()->id)->exists())
-            <form action="{{ route('posts.unlike', $post) }}" method="post">
+            <form action="{{ route('posts.unlike', $post) }}" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('delete')
                 <button type="submit">Unlike</i></button>
             </form>
         @else
-            <form action="{{ route('posts.like', $post) }}" method="post">
+            <form action="{{ route('posts.like', $post) }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <button type="submit">Like</button>
             </form>

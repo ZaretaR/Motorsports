@@ -9,15 +9,22 @@ class Post extends Model
 {
     use HasFactory;
 
-    public function comments() {
+    public function comments()
+    {
         return $this->hasMany(Comment::class);
     }
 
-    public function index() {
+    public function index()
+    {
         $posts = Post::all();
         return view('posts.index', [
             'posts' => $posts
         ]);
+    }
+
+    public function likes()
+    {
+        return $this->belongsToMany(User::class, 'likes', 'post_id', 'user_id');
     }
 }
 
@@ -25,7 +32,8 @@ class Comment extends Model
 {
     use HasFactory;
 
-    public function post() {
+    public function post()
+    {
         return $this->belongsTo(Post::class);
     }
 }

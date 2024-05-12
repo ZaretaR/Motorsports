@@ -8,6 +8,7 @@ use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\KalenderController;
+use App\Http\Controllers\PostLikeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +43,7 @@ Route::post('/login', [AuthController::class, 'handleLogin'])->name('login.post'
 Route::get('/aanmelden', [AuthController::class, 'register'])->name('register')->middleware('guest');
 Route::post('/aanmelden', [AuthController::class, 'handleRegister'])->name('register.post')->middleware('guest');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
+
+//LIKES
+Route::post('/posts/{post}/like', [PostLikeController::class, 'like'])->name('posts.like')->middleware('auth');
+Route::delete('/posts/{post}/unlike', [PostLikeController::class, 'unlike'])->name('posts.unlike')->middleware('auth');

@@ -1,4 +1,19 @@
 <article class="post-small">
+    <span class="aantal-likes">{{ $post->likes()->count() }}</span>
+    @if (auth()->user())
+        @if ($post->likes()->where('user_id', auth()->user()->id)->exists())
+            <form action="{{ route('posts.unlike', $post) }}" method="post">
+                @csrf
+                @method('delete')
+                <button type="submit"><i class="fa-solid fa-heart" style="color: #ffc72c;"></i></button>
+            </form>
+        @else
+            <form action="{{ route('posts.like', $post) }}" method="post">
+                @csrf
+                <button type="submit"><i class="fa-regular fa-heart" style="color: #ffc72c;"></i></button>
+            </form>
+        @endif
+    @endif
     <h1>{{ $post->title }}</h1>
     <p>{{ $post->created_at }}</p>
     <img style="max-width:500px" src="{{ asset('images/' . $post->picture) }}">
@@ -9,5 +24,6 @@
             {{ $post->description }}
         @endif
     </div>
+
     <a href="/posts/{{ $post->id }}" class="italic">Lees verder &rarr;</a>
 </article>

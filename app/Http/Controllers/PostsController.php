@@ -41,13 +41,21 @@ class PostsController extends Controller
             'picture' => 'image|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
+        $administratorId = Auth::id();
         $post = new Post();
         $post->title = $request->title;
         $post->picture = $request->picture->store('public/pictures');
         $post->description = $request->description;
+        $post->administator_id = $administratorId;
         $post->save();
 
-        return redirect('/posts');
+        $numberOfLikes = $post->likes()->count();
+
+        //return redirect('/posts');
+        return view('posts.index', [
+            'posts' => Post::all(),
+            'numberOfLikes' => $numberOfLikes,
+        ]);
     }
 
     /**

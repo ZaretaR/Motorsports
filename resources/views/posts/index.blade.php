@@ -21,7 +21,7 @@
             @if (Auth::check())
                 <p class="welkom">Welkom, {{ Auth::user()->username }}</p>
             @endif
-            <a href="{{ route('posts.create') }}" class="nieuwe-post">Nieuwe post toevoegen</a> <br>
+            <a href="{{ route('posts.create') }}" class="nieuwe-post">Nieuwe post toevoegen</a>
             <div class="blog-posts">
                 <div class="post">
                     @forelse ($posts as $post)

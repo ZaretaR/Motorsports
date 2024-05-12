@@ -21,6 +21,7 @@
 
     <section class="post-formulier">
         <div>
+            <p class="likes-show">{{ $post->likes()->count() }} Likes</p>
             <h2 class="post-title">{{ $post->title }}</h2>
             <p>{{ $post->created_at }}</p>
             <img style="max-width:200px" src="{{ asset('images/' . $post->picture) }}">
@@ -34,11 +35,6 @@
                 </form>
             </div>
         </div>
-
-
-        <aside class="comments">
-            <p>{{ $post->likes }}</p>
-        </aside>
 
     </section>
     @include('includes/footer')

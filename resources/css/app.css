@@ -681,6 +681,7 @@ span {
     border: none;
     margin-top: 20px;
     font-size: 15px;
+    font-weight: 600;
 }
 .aantal-likes {
     display: flex;
@@ -690,4 +691,12 @@ span {
 }
 .post-small > h1 {
     margin-top: 50px;
+}
+.likes-show {
+    font-weight: 800;
+    color: #FFC72C;
+    display: flex;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -10px;
 }

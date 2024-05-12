@@ -526,9 +526,15 @@ textarea {
     text-decoration: none;
 }
 .post{
-    width: 300px;
-    padding: 20px;
-    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    width: 1200px;
+}
+.post-small {
+    flex-basis: calc(25% - 50px);
+    max-width: calc(25% - 50px);
 }
 .italic {
     font-style: italic;
@@ -538,6 +544,16 @@ textarea {
 .post i {
     float: right;
     margin-bottom: 10px;
+}
+.post-small-description {
+    margin-bottom: 20px;
+}
+.post-small > a {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+.post-small > a:hover {
+    color: #FFC72C;
 }
 /*PROFILE*/
 .inlog-formulier, .aanmeld-formulier {
@@ -590,16 +606,23 @@ span {
     font-size: 12px;
 }
 .welkom {
-    width: 1200px;
+    display: flex;
+    justify-content: left;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 800;
     font-weight: 800;
 }
 .post-formulier {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0 10px 0;
+    margin: 50px auto 100px auto;
+    max-width: 1200px;
+    width: 100%;
 }
-.toevoegen {
+.opslaan {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -608,8 +631,42 @@ span {
     border: none;
     font-weight: 800;
 }
-.toevoegen:hover {
+.opslaan:hover {
     background-color: #0166B1;
     color: white;
     font-weight: 800;
+}
+.post-buttons {
+    display: flex;
+    gap: 10px;
+}
+.bewerken, .verwijderen {
+    background-color: #FFC72C;
+    border: none;
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-weight: 700;
+}
+.bewerken:hover, .verwijderen:hover {
+    background-color: #0166B1;
+    color: white;
+}
+.back {
+    display: flex;
+    justify-content: left;
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    font-weight: 800;
+}
+.back a {
+    text-decoration: none;
+    color: #2c2c2c;
 }

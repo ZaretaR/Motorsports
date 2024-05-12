@@ -38,24 +38,16 @@ class PostsController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            //'picture' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'picture' => 'image|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
-        $administratorId = Auth::id();
-
         $post = new Post();
-        //if ($request->hasFile('picture')) {
-        //    $image = $request->file('picture');
-        //    $fileName = time() . '_' . $image->getClientOriginalName();
-        //    $image->storeAs('public/images', $fileName);
-        //    $post->picture = $fileName;
-        //}
         $post->title = $request->title;
+        $post->picture = $request->picture->store('public/pictures');
         $post->description = $request->description;
-        $post->administator_id = $administratorId;
         $post->save();
 
-        return redirect('/posts' . $post->id);
+        return redirect('/posts');
     }
 
     /**
@@ -102,7 +94,7 @@ class PostsController extends Controller
         $post->description = $request->description;
         $post->save();
 
-        return redirect('/posts' . $post->id);
+        return redirect()->route('posts.show', ['id' => $post->id]);
     }
 
     /**

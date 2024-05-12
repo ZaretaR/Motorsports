@@ -12,6 +12,13 @@ class Post extends Model
     public function comments() {
         return $this->hasMany(Comment::class);
     }
+
+    public function index() {
+        $posts = Post::all();
+        return view('posts.index', [
+            'posts' => $posts
+        ]);
+    }
 }
 
 class Comment extends Model

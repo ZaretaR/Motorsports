@@ -7,10 +7,9 @@
     <input type="text" name="title" id="title" value="{{ old('title', $post->title) }}">
 </div>
 
-
 <div>
     Afbeelding uploaden <br>
-    <input type="file" id="picture" name="picture" accept="image/*">
+    <input type="file" id="picture" name="picture" value="{{ old('picture') }}">
 </div>
 
 <div>
@@ -23,5 +22,5 @@
 </div>
 
 <div>
-    <input class="toevoegen" type="submit" name="toevoegen" id="toevoegen" value="Toevoegen">
+    <input class="opslaan" type="submit" name="opslaan" id="opslaan" value="Opslaan">
 </div>

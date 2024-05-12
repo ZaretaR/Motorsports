@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('administator_id');
             $table->string('title');
             $table->string('description');
-            $table->binary('picture');
+            $table->string('picture')->nullable();
             $table->timestamps();
         });
     }

@@ -32,7 +32,7 @@ Route::get('/posts', [PostsController::class, 'index'])->name('posts.index')->mi
 Route::post('/posts', [PostsController::class, 'store'])->name('posts.store')->middleware('auth');
 Route::get('/posts/create', [PostsController::class, 'create'])->name('posts.create')->middleware('auth');
 Route::get('/posts/{id}', [PostsController::class, 'show'])->name('posts.show')->middleware('auth');
-Route::post('/posts/{id}', [PostsController::class, 'update'])->name('posts.update')->middleware('auth');
+Route::put('/posts/{id}', [PostsController::class, 'update'])->name('posts.update')->middleware('auth');
 Route::delete('/posts/{id}', [PostsController::class, 'destroy'])->name('posts.destroy')->middleware('auth');
 Route::get('/posts/{id}/edit', [PostsController::class, 'edit'])->name('posts.edit')->middleware('auth');
 

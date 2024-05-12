@@ -1,11 +1,7 @@
 <article class="post-small">
-    <h1>
-        <a href="/posts/{{ $post->id }}">{{ $post->title }}">
-            {{ $post->title }}
-        </a>
-    </h1>
+    <h1>{{ $post->title }}</h1>
     <p>{{ $post->created_at }}</p>
-    <img src="{{ $post->image }}" alt="{{ $post->title }}">
+    <img style="max-width:500px" src="{{ asset('images/' . $post->picture) }}">
     <div class="post-small-description">
         @if (strlen($post->description) > 100)
             {{ substr($post->description, 0, 100) }}...
@@ -13,7 +9,5 @@
             {{ $post->description }}
         @endif
     </div>
-    <footer>
-        <a href="/posts/{{ $post->id }}">Lees verder &rarr;</a>
-    </footer>
+    <a href="/posts/{{ $post->id }}" class="italic">Lees verder &rarr;</a>
 </article>

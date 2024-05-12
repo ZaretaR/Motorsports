@@ -55,7 +55,7 @@ class PostsController extends Controller
         $post->administator_id = $administratorId;
         $post->save();
 
-        return redirect('/posts/' . $post->id);
+        return redirect('/posts' . $post->id);
     }
 
     /**

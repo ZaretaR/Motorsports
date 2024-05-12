@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <header>
+        <div class="container-nav">
+            @include('includes/nav')
+        </div>
+    </header>
+
     <section class="inlog-formulier" id="inlog-formulier">
         <form action="{{ route('login') }}" method="post" novalidate>
             @csrf

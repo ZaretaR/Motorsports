@@ -9,12 +9,6 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-nav">
-            @include('includes/nav')
-        </div>
-    </header>
-
     @include('auth/login')
 </body>
 

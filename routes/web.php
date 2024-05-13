@@ -47,3 +47,5 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout')->middle
 //LIKES
 Route::post('/posts/{post}/like', [PostLikeController::class, 'like'])->name('posts.like')->middleware('auth');
 Route::delete('/posts/{post}/unlike', [PostLikeController::class, 'unlike'])->name('posts.unlike')->middleware('auth');
+
+//KALENDER

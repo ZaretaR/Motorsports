@@ -15,7 +15,6 @@
         </div>
     </header>
 
-    @include('includes/kalender-section')
     @include('includes/footer')
 </body>
 

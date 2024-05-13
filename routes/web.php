@@ -49,4 +49,8 @@ Route::post('/posts/{post}/like', [PostLikeController::class, 'like'])->name('po
 Route::delete('/posts/{post}/unlike', [PostLikeController::class, 'unlike'])->name('posts.unlike')->middleware('auth');
 
 //EVENTS
-Route::get('/kalender', [EventController::class, 'myCalendar'])->name('kalender.index')->middleware('auth');
+Route::get('/kalender', [EventController::class, 'myCalendar'])->name('kalender')->middleware('auth');
+Route::post('/kalender/addevent', [EventController::class, 'addEvent'])->name('kalender.addevent')->middleware('auth');
+Route::get('getevents', [EventController::class, 'getEvents'])->name('getevents')->middleware('auth');
+Route::post('/kalender/editevent', [EventController::class, 'updateevent'])->name('kalender.editevent')->middleware('auth');
+Route::post('/kalender/deleteevent', [EventController::class, 'deleteevent'])->name('kalender.deleteevent')->middleware('auth');

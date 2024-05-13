@@ -25,8 +25,7 @@
         </div>
     </header>
 
-    @section('kalender-content')
-    @endsection
+    @include('kalender.index')
     @include('includes/footer')
 </body>
 

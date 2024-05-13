@@ -9,14 +9,7 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/achtergrond.jpg" alt="achtergrond">
-        @include('includes/nav')
-        <h1>GRT MOTORSPORTS</h1>
-        <a href="{{ route('events') }}">Bekijk onze kalender</a>
-        <i class="fa-solid fa-arrow-pointer" style="color: #ffffff;"></i>
-    </header>
-
+    @include('includes/home-nav')
     @include('includes/motorsport')
     @include('includes/trackday')
     @include('includes/footer')

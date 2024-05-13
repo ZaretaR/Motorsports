@@ -12,11 +12,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-nav">
-            @include('includes/nav')
-        </div>
-    </header>
+    @include('includes/nav')
 
     <div class=”row justify-content-center”>
         <div class=”col-md-8″>

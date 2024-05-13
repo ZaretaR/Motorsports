@@ -9,7 +9,9 @@
 </head>
 
 <body>
+    @include('includes/nav')
     @include('auth/login')
+    @include('includes/footer')
 </body>
 
 </html>

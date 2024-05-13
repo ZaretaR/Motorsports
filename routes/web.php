@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
@@ -25,7 +26,6 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/team', [TeamController::class, 'team'])->name('team');
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'verzenden']);
-Route::get('/kalender', [KalenderController::class, 'kalender'])->name('kalender')->middleware('auth');
 Route::get('/profile', [ProfileController::class, 'profile'])->name('profile')->middleware('guest');
 
 //BLOG -> POSTS
@@ -47,3 +47,6 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout')->middle
 //LIKES
 Route::post('/posts/{post}/like', [PostLikeController::class, 'like'])->name('posts.like')->middleware('auth');
 Route::delete('/posts/{post}/unlike', [PostLikeController::class, 'unlike'])->name('posts.unlike')->middleware('auth');
+
+//EVENTS
+Route::get('/kalender', [EventController::class, 'myCalendar'])->name('kalender.index')->middleware('auth');

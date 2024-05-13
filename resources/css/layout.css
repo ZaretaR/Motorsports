@@ -18,7 +18,7 @@ span {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 390px;
+        width: 380px;
         box-sizing: border-box;
         z-index: 1;
         margin: 0 auto 100px auto;
@@ -27,19 +27,15 @@ span {
     /*HEADER*/
     header > img {
         width: 100%;
-        height: 90vh;
-        object-fit: cover;
+        height: auto;
     }
     nav ul {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+        flex-direction: column;
+        gap: 15px;
         position: absolute;
         top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 1200px;
+        width: 350px;
         box-sizing: border-box;
         z-index: 1;
     }
@@ -49,80 +45,50 @@ span {
     a {
         list-style: none;
         color: white;
-        text-decoration: underline;
-        text-underline-offset: 10px;
-    }
-    a:active {
-        color: #0166B1;
-        font-weight: bold;
-    }
-    a:hover {
-        color: #0166B1;
-        font-weight: bold;
-    }
-    nav ul li:last-child a {
-        color: #FFC72C;
-        font-weight: 800;
-    }
-    nav ul li:last-child a:hover {
-        color: #0166B1;
-        font-weight: 800;
+        text-decoration: none;
     }
     header > h1 {
         font-family: "Bebas Neue", sans-serif;
-        position: absolute;
-        top: 23%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        color: white;
-        font-size: 120px;
+        color: #2c2c2c;
+        margin-left: 25px;
         font-weight: 900;
-        text-shadow: 5px 5px 0px rgba(218, 218, 218, 0.25);
     }
     header > a {
+        align-items: flex-end;
         position: absolute;
-        top: 51%;
-        left: 50%;
-        transform: translateX(50%);
-        text-align: center;
-        color: #FFC72C;
-        font-size: 20px;
-        font-weight: 900;
+        top: 55%;
+        margin-left: 40px;
+        color: white;
         background-color: transparent;
         border: none;
-        cursor: pointer;
-    }
-    header > a:hover {
-        color: white;
-        font-weight: 800;
-    }
-    header > i {
-        font-size: 20px;
-        color: white;
-        position: absolute;
-        top: 54%;
-        left: 72%;
-        transform: translateX(50%);
     }
 
     /*HOME*/
+    .motorsport .container {
+        width: 350px;
+    }
     .motorsport .container > h3 {
         font-weight: 800;
-        font-size: 25px;
-        margin-top: 40px;
-        align-self: flex-end;
+        margin-top: 20px;
+        width: 350px;
     }
-    .motorsport .first-section {
-        display: flex;
-        flex-direction: row;
+    .motorsport .first-section .image-normal {
+        width: 350px;
+        height: auto;
+        margin-top: 25px;
+    }
+    .motorsport .image-shadow {
+        display: none;
+    }
+    .motorsport .second-section {
         margin-top: 20px;
     }
-    .motorsport .text-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 700px;
+    .motorsport .images-second-section {
+        margin-top: 20px;
+    }
+    .motorsport .images-second-section img {
+        width: 350px;
+        height: auto;
     }
     .motorsport .text-content > ul {
         list-style-type: none;
@@ -130,66 +96,22 @@ span {
     .motorsport .text-content > ul > li {
         position: relative;
     }
-    .motorsport .text-content > ul > li::before {
+    .motorsport > .text-content > ul > li::before {
         content: "●";
         color: #0166B1;
         position: absolute;
         left: -20px;
     }
-    .motorsport .first-section .image-normal {
-        margin-right: 50px;
-        width: auto;
-        max-width: 400px;
-        height: max-content;
-        margin-top: 25px;
-    }
-    .motorsport .image-shadow {
-        position: absolute;
-        left: 6%;
-        transform: translateX(20%);
-        opacity: 0.5;
-        z-index: -1;
-        filter: blur(5px);
-        width: 400px;
-        height: auto;
-    }
-    .motorsport .second-section {
-        margin-top: 50px;
-    }
-    .motorsport .images-second-section {
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-    }
-    .motorsport .images-second-section img {
-        width: auto;
-        max-width: 400px;
-        height: max-content;
-        margin: 0 -10px;
-    }
-    .motorsport .images-second-section img:nth-child(2) {
-        width: auto;
-        max-width: 400px;
-        height: max-content;
-        position: relative;
-        top: -40px;
-    }
 
     /*TRACKDAYS*/
+    .trackdays .container {
+        width: 350px;
+    }
     .trackdays .container > h3 {
         font-weight: 800;
-        font-size: 25px;
         margin-top: -50px;
-        align-self: flex-start;
         margin-bottom: 20px;
-    }
-    .trackdays .first-section p {
-        margin-bottom: 50px;
-    }
-    .trackdays .inhoud-first-section {
-        display: flex;
-        margin-bottom: 50px;
-        gap: 50px;
+        width: 350px;
     }
     .trackdays .inhoud-first-section > ul {
         list-style-type: none;
@@ -204,29 +126,23 @@ span {
         left: -20px;
     }
     .trackdays .quote {
-        display: flex;
-        justify-content: center;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 50px;
     }
     .trackdays .quote p {
-        text-align: center;
-        position: relative;
+        color: #0166b1;
+        font-weight: 700;
     }
     .trackdays .quote i {
-        text-align: center;
-        font-size: 50px;
-        padding: 0 25px 0 25px;
+        display: none;
     }
     .trackdays .cars {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         gap: 50px;
         margin-bottom: 50px;
     }
     .trackdays .formules {
-        width: 1200px;
+        width: 350px;
     }
     .trackdays .formules > ul {
         list-style-type: none;
@@ -240,38 +156,33 @@ span {
         position: absolute;
         left: -20px;
     }
+    .trackdays .formules > p {
+        margin-bottom: -40px;
+    }
     .uitnodiging {
         background-color: #FFC72C;
     }
     .uitnodiging p {
-        width: 1200px;
-        text-align: center;
-        padding: 50px;
+        width: 350px;
         font-weight: 500;
     }
-    .interesse {
-        position: relative;
-        display: flex;
-        gap: 50px;
+    .trackdays .container {
+        width: 350px;
+    }
+    .trackdays .container > h4 {
+        width: 350px;
+        margin-top: -30px;
     }
     .interesse > img {
-        width: auto;
-        max-width: 400px;
+        width: 350px;
         height: auto;
-        z-index: 1;
     }
     .interesse > p {
-        width: 700px;
+        width: 350px;
+        margin-bottom: 50px;
     }
     .interesse .rechthoek {
-        position: absolute;
-        left: -25px;
-        top: -25px;
-        width: 350px;
-        height: 220px;
-        border: 2px solid #0166b1;
-        padding: 20px;
-        z-index: 0;
+        display: none;
     }
     .trackdays .interesse-kalender > a {
         padding: 10px 20px;
@@ -281,177 +192,136 @@ span {
         text-decoration: none;
         font-weight: 800;
     }
-    .trackdays .interesse-kalender > a:hover {
-        background-color: #0166B1;
-        color: white;
-        cursor: pointer;
-    }
 
     /*TEAM*/
     .container-nav {
         background-color: #2c2c2c;
-        height: 100px;
+        height: 100vh;
+    }
+    .meet-our-team .container {
+        width: 350px;
     }
     .meet-our-team > .container > h3 {
         margin-top: 50px;
+        width: 350px;
     }
     /*FIRST TEAM*/
-    .our-team-first {
-        margin-top: 50px;
-        display: flex;
-    }
     .our-team-first > img {
-        width: auto;
-        max-width: 250px;
+        width: 200px;
         height: auto;
-        border-radius: 50%;
+        margin-left: 20%;
+    }
+    .our-team-first {
+        align-items: center;
+        justify-content: center;
+        width: 350px;
     }
     .our-team-first > ul {
-        width: 800px;
+        margin-bottom: -30px;
     }
     /*DRIVERS TEAM*/
-    .our-team-drivers {
-        display: flex;
-        gap: 100px;
-    }
     .luc-jansens > img, .jan-geunes > img {
-        border-radius: 50%;
+        width: 200px;
+        margin-left: 20%;
     }
     .background-drivers {
         background-color: #FFC72C;
-        height: 72vh;
+        height: max-content;
         width: 100%;
+        margin-bottom: 0;
     }
     .background-drivers > .container > h3 {
-        font-size: 40px;
         font-weight: 800;
-        color: white;
+        color: #2c2c2c;
+        width: 350px;
     }
     .our-team-drivers {
         color: white;
+        width: 350px;
     }
-    .luc {
-        position: absolute;
-        transform: translate(270px, -300px);
+    .luc-jansens h4, .jan-geunes h4 {
+        margin-left: 20%;
     }
-    .jan {
-        position: absolute;
-        transform: translate(-50px, -50px);
-    }
-    .luc-jansens {
-        width: 500px;
-    }
-    .jan-geunes {
-        width: 500px;
-    }
+
     /*TECHNICAL TEAM*/
     .background-technical-team {
+        margin-top: -100px;
         background-color: #2c2c2c;
-        height: 120vh;
+        height: max-content;
         width: 100%;
     }
     .background-technical-team > .container > h3 {
-        font-size: 40px;
         font-weight: 800;
         color: white;
-    }
-    .technical-team {
-        display: flex;
+        padding-top: 30px;
+        width: 350px;
     }
     .technical-team img {
-        border-radius: 50%;
+        width: 200px;
     }
     .technical-team h4 {
         color: white;
     }
-    .benny-lambrechts > h4 {
-        position: absolute;
-        transform: translate(-140px, -300px);
+    .technical-team {
+        width: 350px;
     }
-    .benny-lambrechts {
-        width: 550px;
+    .benny-lambrechts, .bart-weeghmans {
+        width: 350px;
+        margin-left: 20%;
     }
-    .bart-weeghmans > h4 {
-        position: absolute;
-        transform: translate(-100px, -50px);
-    }
-    .bart-weeghmans {
-        width: 550px;
-    }
-    .laurens-dujardin > h4 {
-        position: absolute;
-        transform: translate(290px, -80px);
-    }
-    .laurens-dujardin {
-        margin-top: 50px;
-        width: 500px;
-    }
-    .brecht-reynders > h4 {
-        position: absolute;
-        transform: translate(290px, -300px);
-    }
-    .brecht-reynders {
-        margin-top: 50px;
-        width: 450px;
+    .laurens-dujardin, .brecht-reynders {
+        width: 350px;
+        margin-left: 20%;
     }
     /*PITSTOP TEAM*/
     .background-pitstop-assistance {
-        height: 65vh ;
+        height: max-content ;
         color: #2c2c2c;
     }
     .background-pitstop-assistance h3 {
-        font-size: 40px;
         font-weight: 800;
+        width: 350px;
+        margin-top: -35px;
+        margin-bottom: 50px;
     }
     .pitstop-assistance img {
-        border-radius: 50%;
+        width: 200px;
+        margin-left: 20%;
     }
-    .pitstop-assistance > h4 {
-        position: absolute;
-        transform: translate(-120px, -70px);
-    }
-    .pitstop-assistance {
-        width: 800px;
+    .pitstop-assistance h4 {
+        width: 350px;
+        margin-left: 20%;
+        margin-bottom: 0;
     }
     /*PICTURES TEAM*/
     .background-pictures-team img {
-        margin-top: 50px;
-        width: 100%;
-        margin-bottom: -5px;
+        display: none;
     }
 
     /*CONTACT*/
     .contact-formulier {
-        display: flex;
-        justify-content: space-between;
-    }
-    .map, .formulier {
-        flex: 1;
-    }
-    .map {
-        margin: 100px 50px 100px 100px;
-    }
-    .formulier {
-        margin: 100px 100px 100px 50px;
+        margin-top: 50px;
+        width: 350px;
+        margin-left: 20%;
     }
     label {
         font-weight: 600;
     }
+    .map {
+        display: none;
+    }
     .formulier h3 {
-        font-size: 30px;
         font-weight: 800;
-        margin-top: 0;
     }
     input {
         margin-top: 5px;
-        margin-bottom: 10px;
-        width: 400px;
+        margin-bottom: 20px;
         padding: 5px;
+        width: 225px;
         border: solid 1px #2c2c2c74;
     }
     textarea {
         margin-top: 5px;
-        width: 400px;
         padding: 5px;
         border: solid 1px #2c2c2c74;
     }
@@ -462,25 +332,24 @@ span {
         background-color: #FFC72C;
         font-weight: 600;
         padding: 6px 12px;
-    }
-    .verzenden:hover {
-        background-color: #0166B1;
-        color: white;
-        cursor: pointer;
+        margin-bottom: 50px;
     }
 
     /*KALENDER*/
     .kalender {
         background-color: white;
         height: max-content;
+        width: 350px;
     }
 
     /*BLOGPOSTS*/
     .blog {
-        height: fit-content;
+        height: max-content;
+        width: 350px;
     }
-    .blog-posts {
-        display: flex;
+    .welkom {
+        width: 350px;
+        font-weight: 800;
     }
     .blog > .container > .nieuwe-post {
         margin-top: 25px;
@@ -490,67 +359,51 @@ span {
         font-weight: 600;
         padding: 6px 12px;
         text-decoration: none;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
-    .blog > .container > .nieuwe-post:hover {
-        margin-top: 25px;
-        border: none;
-        background-color: #0166B1;
-        color: white;
-        font-weight: 600;
-        padding: 6px 12px;
-        text-decoration: none;
-    }
-    .post{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-        width: 1200px;
-    }
-    .post-small {
-        flex-basis: calc(25% - 50px);
-        max-width: calc(25% - 50px);
+    .post {
+        width: 350px;
     }
     .italic {
         font-style: italic;
-        font-size: 15px;
         margin-top: 0;
     }
-    .post i {
-        float: right;
-        margin-bottom: 10px;
+    .aantal-likes {
+        font-size: 15px;
+    }
+    .post-small > h1 {
+        margin-top: 20px;
     }
     .post-small-description {
+        margin-top: 20px;
         margin-bottom: 20px;
     }
     .post-small > a {
         text-decoration: none;
         color: #2c2c2c;
     }
-    .post-small > a:hover {
-        color: #FFC72C;
+    .post-small > img {
+        width: 350px;
+    }
+    .post-small button {
+        background-color: #FFC72C;
+        padding: 4px 8px;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        font-size: 15px;
+        font-weight: 600;
     }
     .post-formulier {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 50px auto 100px auto;
-        max-width: 1200px;
-        width: 100%;
+        width: 350px;
+        margin-left: 10%;
+        padding: 80px 0;
     }
     .opslaan {
-        display: flex;
-        justify-content: center;
         margin-bottom: 50px;
         margin-top: 50px;
         background-color: #FFC72C;
         border: none;
-        font-weight: 800;
-    }
-    .opslaan:hover {
-        background-color: #0166B1;
-        color: white;
         font-weight: 800;
     }
     .post-buttons {
@@ -563,7 +416,7 @@ span {
         color: #2c2c2c;
         text-decoration: none;
         font-size: 15px;
-        width: 200px;
+        width: 100px;
         height: 30px;
         display: flex;
         justify-content: center;
@@ -571,15 +424,8 @@ span {
         margin-top: 50px;
         font-weight: 700;
     }
-    .bewerken:hover, .verwijderen:hover {
-        background-color: #0166B1;
-        color: white;
-    }
     .back {
-        display: flex;
-        justify-content: left;
-        max-width: 1200px;
-        width: 100%;
+        width: 350px;
         margin: 50px auto 0 auto;
         font-weight: 800;
     }
@@ -591,29 +437,9 @@ span {
         font-weight: 800;
         color: #2c2c2c;
     }
-    .post-small button {
-        background-color: #FFC72C;
-        padding: 4px 8px;
-        border: none;
-        margin-top: 20px;
-        font-size: 15px;
-        font-weight: 600;
-    }
-    .aantal-likes {
-        display: flex;
-        position: absolute;
-        font-size: 15px;
-        margin-left: 215px;
-    }
-    .post-small > h1 {
-        margin-top: 50px;
-    }
     .likes-show {
         font-weight: 800;
         color: #FFC72C;
-        display: flex;
-        position: absolute;
-        margin-left: 1000px;
         margin-top: -10px;
     }
 
@@ -638,6 +464,7 @@ span {
         color: white;
         font-weight: 800;
     }
+
     .insurance {
         margin-top: 5px;
         margin-bottom: 10px;
@@ -660,54 +487,35 @@ span {
         font-weight: 600;
         font-size: 15px;
     }
-    .geen-account > p > button > a:hover, .wel-account > p > button > a:hover {
-        color: #0166B1;
-    }
-    .welkom {
-        display: flex;
-        justify-content: left;
-        max-width: 1200px;
-        width: 100%;
-        margin: 0 auto;
-        font-weight: 800;
-        font-weight: 800;
-    }
 
     /*FOOTER*/
     footer {
         background-color: #2c2c2c;
-        height: 50vh;
+        height: max-content;
         color: white;
-        position: sticky;
     }
     .gegevens-eerste-deel {
         margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        gap: 300px;
-        width: 100%;
+        width: 350px;
+    }
+    .bereikbaarheid {
+        margin-left: -10%;
     }
     .lijn {
         border-bottom: 1px solid white;
-        width: 1200px;
+        width: 380px;
         margin-top: 20px;
     }
     .gegevens-tweede-deel {
         margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        gap: 800px;
-        width: 1200px;
+        width: 350px;
     }
     .gegevens-tweede-deel p {
         font-size: 10px;
-        align-self: center;
     }
     .gegevens-tweede-deel > img {
         width: auto;
-        max-width: 200px;
+        max-width: 150px;
         height: auto;
     }
 }

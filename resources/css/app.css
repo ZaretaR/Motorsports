@@ -281,9 +281,8 @@ header > i {
 /*FOOTER*/
 footer {
     background-color: #2c2c2c;
-    height: 50vh;
+    height: max-content;
     color: white;
-    position: sticky;
 }
 .gegevens-eerste-deel {
     margin-top: 20px;
@@ -300,6 +299,7 @@ footer {
 }
 .gegevens-tweede-deel {
     margin-top: 20px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -699,4 +699,7 @@ span {
     position: absolute;
     margin-left: 1000px;
     margin-top: -10px;
+}
+.post-small {
+    height: 500px;
 }

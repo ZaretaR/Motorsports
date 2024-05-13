@@ -52,6 +52,9 @@ class KalenderController extends Controller
 
     public function search(Request $request)
     {
-        $searchText
+        $searchText = $request->input('name');
+        $matchingEvents = Event::where('name', 'like', '%' . $searchText . '%')->get();
+
+        return response()->json($matchingEvents);
     }
 }

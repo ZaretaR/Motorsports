@@ -7,11 +7,7 @@
     <title>Kalender</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="jquery-3.6.0.min.js"></script>
-    <script
-        src="
-                                                                                                                                                            https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js
-                                                                                                                                                            ">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 

@@ -38,13 +38,18 @@ class PostsController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'image' => 'image',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         $userId = Auth::id();
         $post = new Post();
         $post->title = $request->title;
-        $post->image = $request->image->store('public/images');
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $fileName = time() . '_' . $image->getClientOriginalName();
+            $image->storeAs('public/images', $fileName);
+            $post->image = $fileName;
+        }
         $post->description = $request->description;
         $post->user_id = $userId;
         $post->save();

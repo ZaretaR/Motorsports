@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalender</title>
-    @vite(['resources/css/layout.css', 'resources/js/app.js'])
+    @vite(['resources/css/style.css', 'resources/js/app.js'])
     <script src="jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">

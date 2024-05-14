@@ -15,6 +15,4 @@
         </ul>
     </nav>
     <h1>GRT MOTORSPORTS</h1>
-    <a href="{{ route('events') }}">Bekijk onze kalender</a>
-    <i class="fa-solid fa-arrow-pointer" style="color: #ffffff;"></i>
 </header>

@@ -1,7 +1,9 @@
 <header>
     <div class="container-nav">
-        <nav>
-            <ul>
+        <label for="menu-toggle" class="menu-toggle"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
+        <input type="checkbox" id="menu-toggle">
+        <nav id="main-nav">
+            <ul class="menu-items">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('team') }}">Team</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>

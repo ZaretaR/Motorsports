@@ -21,7 +21,13 @@
 
     <section class="post-formulier">
         <div>
-            <p class="likes-show">{{ $post->likes()->count() }} Likes</p>
+            <span class="aantal-likes">{{ $post->likes()->count() }}</span>
+            @if (auth()->user() &&
+                    $post->likes()->where('user_id', auth()->user()->id)->exists())
+                <i class="fa-solid fa-heart" style="color: #ffc72c;"></i>
+            @else
+                <i class="fa-regular fa-heart" style="color: #ffc72c;"></i>
+            @endif
             <h2 class="post-title">{{ $post->title }}</h2>
             <p>{{ $post->created_at }}</p>
             <img style="max-width:200px" src="{{ Storage::url('images/' . $post->image) }}">

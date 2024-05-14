@@ -1,5 +1,5 @@
 <article class="post-small">
-    <span class="aantal-likes">{{ $post->likes()->count() }}</span>
+    <span class="show-likes">{{ $post->likes()->count() }}</span>
     @if (auth()->user() &&
             $post->likes()->where('user_id', auth()->user()->id)->exists())
         <i class="fa-solid fa-heart" style="color: #ffc72c;"></i>

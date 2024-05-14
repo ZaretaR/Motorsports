@@ -1,0 +1,1647 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #2c2c2c;
+}
+span {
+    color: red;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 400px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 380px;
+        box-sizing: border-box;
+        z-index: 1;
+        margin: 0 auto 100px auto;
+    }
+
+    /*HEADER*/
+    header > img {
+        width: 100%;
+        height: auto;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 20px;
+        width: 350px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        list-style: none;
+        color: white;
+        text-decoration: none;
+    }
+    header > h1 {
+        font-family: "Bebas Neue", sans-serif;
+        color: #2c2c2c;
+        margin-left: 25px;
+        font-weight: 900;
+    }
+    header > a {
+        align-items: flex-end;
+        position: absolute;
+        top: 55%;
+        margin-left: 40px;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
+    /*HOME*/
+    .motorsport .container {
+        width: 350px;
+    }
+    .motorsport .container > h3 {
+        font-weight: 800;
+        margin-top: 20px;
+        width: 350px;
+    }
+    .motorsport .first-section .image-normal {
+        width: 350px;
+        height: auto;
+        margin-top: 25px;
+    }
+    .motorsport .image-shadow {
+        display: none;
+    }
+    .motorsport .second-section {
+        margin-top: 20px;
+    }
+    .motorsport .images-second-section {
+        margin-top: 20px;
+    }
+    .motorsport .images-second-section img {
+        width: 350px;
+        height: auto;
+    }.motorsport .text-content > ul {
+        list-style-type: none;
+    }
+    .motorsport .text-content > ul > li {
+        position: relative;
+    }
+    .motorsport .text-content > ul > li::before {
+        content: "●";
+        color: #0166B1;
+        position: absolute;
+        left: -20px;
+    }
+
+    /*TRACKDAYS*/
+    .trackdays .container {
+        width: 350px;
+    }
+    .trackdays .container > h3 {
+        font-weight: 800;
+        margin-top: -50px;
+        margin-bottom: 20px;
+        width: 350px;
+    }
+    .trackdays .inhoud-first-section > ul {
+        list-style-type: none;
+    }
+    .trackdays .inhoud-first-section > ul > li {
+        position: relative;
+    }
+    .trackdays .inhoud-first-section > ul > li::before {
+        content: "●";
+        color: #0166B1;
+        position: absolute;
+        left: -20px;
+    }
+    .trackdays .quote {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .trackdays .quote p {
+        color: #0166b1;
+        font-weight: 700;
+    }
+    .trackdays .quote i {
+        display: none;
+    }
+    .trackdays .cars {
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    .trackdays .formules {
+        width: 350px;
+    }
+    .trackdays .formules > ul {
+        list-style-type: none;
+    }
+    .trackdays .formules > ul > li {
+        position: relative;
+    }
+    .trackdays .formules > ul > li::before {
+        content: "●";
+        color: #0166B1;
+        position: absolute;
+        left: -20px;
+    }
+    .trackdays .formules > p {
+        margin-bottom: -40px;
+    }
+    .uitnodiging {
+        background-color: #FFC72C;
+    }
+    .uitnodiging p {
+        width: 350px;
+        font-weight: 500;
+    }
+    .trackdays .container {
+        width: 350px;
+    }
+    .trackdays .container > h4 {
+        width: 350px;
+        margin-top: -30px;
+    }
+    .interesse > img {
+        width: 350px;
+        height: auto;
+    }
+    .interesse > p {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+    .interesse .rechthoek {
+        display: none;
+    }
+    .trackdays .interesse-kalender > a {
+        padding: 10px 20px;
+        background-color: #FFC72C;
+        border: none;
+        color: #2c2c2c;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    /*TEAM*/
+    .container-nav {
+        background-color: #2c2c2c;
+        height: 100vh;
+    }
+    .meet-our-team .container {
+        width: 350px;
+    }
+    .meet-our-team > .container > h3 {
+        margin-top: 50px;
+        width: 350px;
+    }
+    /*FIRST TEAM*/
+    .our-team-first > img {
+        width: 200px;
+        height: auto;
+        margin-left: 20%;
+    }
+    .our-team-first {
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+    }
+    .our-team-first > ul {
+        margin-bottom: -30px;
+    }
+    /*DRIVERS TEAM*/
+    .luc-jansens > img, .jan-geunes > img {
+        width: 200px;
+        margin-left: 20%;
+    }
+    .background-drivers {
+        background-color: #FFC72C;
+        height: max-content;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .background-drivers > .container > h3 {
+        font-weight: 800;
+        color: #2c2c2c;
+        width: 350px;
+    }
+    .our-team-drivers {
+        color: white;
+        width: 350px;
+    }
+    .luc-jansens h4, .jan-geunes h4 {
+        margin-left: 20%;
+    }
+
+    /*TECHNICAL TEAM*/
+    .background-technical-team {
+        margin-top: -100px;
+        background-color: #2c2c2c;
+        height: max-content;
+        width: 100%;
+    }
+    .background-technical-team > .container > h3 {
+        font-weight: 800;
+        color: white;
+        padding-top: 30px;
+        width: 350px;
+    }
+    .technical-team img {
+        width: 200px;
+    }
+    .technical-team h4 {
+        color: white;
+    }
+    .technical-team {
+        width: 350px;
+    }
+    .benny-lambrechts, .bart-weeghmans {
+        width: 350px;
+        margin-left: 20%;
+    }
+    .laurens-dujardin, .brecht-reynders {
+        width: 350px;
+        margin-left: 20%;
+    }
+    /*PITSTOP TEAM*/
+    .background-pitstop-assistance {
+        height: max-content ;
+        color: #2c2c2c;
+    }
+    .background-pitstop-assistance h3 {
+        font-weight: 800;
+        width: 350px;
+        margin-top: -35px;
+        margin-bottom: 50px;
+    }
+    .pitstop-assistance img {
+        width: 200px;
+        margin-left: 20%;
+    }
+    .pitstop-assistance h4 {
+        width: 350px;
+        margin-left: 20%;
+        margin-bottom: 0;
+    }
+
+    /*CONTACT*/
+    .contact-formulier {
+        margin-top: 50px;
+        width: 350px;
+        margin-left: 20%;
+    }
+    label {
+        font-weight: 600;
+    }
+    .map {
+        display: none;
+    }
+    .formulier h3 {
+        font-weight: 800;
+    }
+    input {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 225px;
+        border: solid 1px #2c2c2c74;
+    }
+    textarea {
+        margin-top: 5px;
+        padding: 5px;
+        border: solid 1px #2c2c2c74;
+    }
+    .verzenden {
+        margin-top: 25px;
+        width: 100px;
+        border: none;
+        background-color: #FFC72C;
+        font-weight: 600;
+        padding: 6px 12px;
+        margin-bottom: 50px;
+    }
+
+    /*KALENDER*/
+    .kalender {
+        background-color: white;
+        height: max-content;
+        width: 350px;
+    }
+
+    /*BLOGPOSTS*/
+    .blog {
+        height: max-content;
+        width: 350px;
+    }
+    .welkom {
+        width: 350px;
+        font-weight: 800;
+    }
+    .blog > .container > .nieuwe-post {
+        margin-top: 25px;
+        border: none;
+        background-color: #FFC72C;
+        color: #2c2c2c;
+        font-weight: 600;
+        padding: 6px 12px;
+        text-decoration: none;
+        margin-bottom: 50px;
+    }
+    .post {
+        width: 350px;
+    }
+    .italic {
+        font-style: italic;
+        margin-top: 0;
+    }
+    .aantal-likes {
+        font-size: 15px;
+    }
+    .post-small > h1 {
+        margin-top: 20px;
+    }
+    .post-small-description {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .post-small > a {
+        text-decoration: none;
+        color: #2c2c2c;
+    }
+    .post-small > img {
+        width: 350px;
+    }
+    .post-small button {
+        background-color: #FFC72C;
+        padding: 4px 8px;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .post-formulier {
+        width: 350px;
+        margin-left: 10%;
+        padding: 80px 0;
+    }
+    .opslaan {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        background-color: #FFC72C;
+        border: none;
+        font-weight: 800;
+    }
+    .post-buttons {
+        display: flex;
+        gap: 10px;
+    }
+    .bewerken, .verwijderen {
+        background-color: #FFC72C;
+        border: none;
+        color: #2c2c2c;
+        text-decoration: none;
+        font-size: 15px;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        font-weight: 700;
+    }
+    .back {
+        width: 350px;
+        margin: 50px auto 0 auto;
+        font-weight: 800;
+    }
+    .back a {
+        text-decoration: none;
+        color: #2c2c2c;
+    }
+    .aantal-likes {
+        font-weight: 800;
+        color: #2c2c2c;
+    }
+    .likes-show {
+        font-weight: 800;
+        color: #FFC72C;
+        margin-top: -10px;
+    }
+
+    /*PROFILE*/
+    .inlog-formulier, .aanmeld-formulier {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 10px 0;
+    }
+    .inloggen, .aanmelden {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-top: 50px;
+        background-color: #FFC72C;
+        border: none;
+        font-weight: 800;
+    }
+    .inloggen:hover, .aanmelden:hover {
+        background-color: #0166B1;
+        color: white;
+        font-weight: 800;
+    }
+
+    .insurance {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 200px;
+        padding: 5px;
+        border: solid 1px #2c2c2c74;
+    }
+    .geen-account, .wel-account {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 100px 0;
+    }
+    .geen-account > p > button, .wel-account > p > button {
+        background-color: transparent;
+        border: none;
+    }
+    .geen-account > p > button > a, .wel-account > p > button > a {
+        text-decoration: none;
+        color: #2c2c2c;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    /*FOOTER*/
+    footer {
+        background-color: #2c2c2c;
+        height: max-content;
+        color: white;
+    }
+    .gegevens-eerste-deel {
+        margin-top: 20px;
+        width: 350px;
+    }
+    .bereikbaarheid {
+        margin-left: -10%;
+    }
+    .lijn {
+        border-bottom: 1px solid white;
+        width: 380px;
+        margin-top: 20px;
+    }
+    .gegevens-tweede-deel {
+        margin-top: 20px;
+        width: 350px;
+    }
+    .gegevens-tweede-deel p {
+        font-size: 10px;
+    }
+    .gegevens-tweede-deel > img {
+        width: auto;
+        max-width: 150px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 940px;
+        box-sizing: border-box;
+        z-index: 1;
+        margin: 0 auto 100px auto;
+    }
+
+    /*HEADER*/
+    header > img {
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 900px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        list-style: none;
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+    nav ul li:last-child a {
+        color: #FFC72C;
+        font-weight: 800;
+    }
+    header > h1 {
+        font-family: "Bebas Neue", sans-serif;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: white;
+        font-size: 70px;
+        font-weight: 900;
+        text-shadow: 5px 5px 0px rgba(218, 218, 218, 0.25);
+    }
+    header > a {
+        position: absolute;
+        top: 55%;
+        left: 42%;
+        transform: translateX(50%);
+        text-align: center;
+        color: #FFC72C;
+        font-size: 15px;
+        font-weight: 900;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    /*HOME*/
+    .motorsport .container {
+        width: 900px;
+    }
+    .motorsport .container > h3 {
+        font-weight: 800;
+        margin-top: 20px;
+        width: 900px;
+    }
+    .motorsport .first-section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        width: 900px;
+    }
+    .motorsport .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 550px;
+    }
+    .motorsport .text-content > ul {
+        list-style-type: none;
+    }
+    .motorsport .text-content > ul > li {
+        position: relative;
+    }
+    .motorsport .text-content > ul > li::before {
+        content: "●";
+        color: #0166B1;
+        position: absolute;
+        left: -20px;
+    }
+    .motorsport .first-section .image-normal {
+        margin-right: 50px;
+        max-width: 350px;
+        height: max-content;
+        margin-top: 25px;
+    }
+    .motorsport .image-shadow {
+        display: none;
+    }
+    .motorsport .second-section {
+        margin-top: 50px;
+        width: 900px;
+    }
+    .motorsport .images-second-section {
+        margin-top: 50px;
+    }
+    .motorsport .images-second-section img {
+        width: 295px;
+        height: auto;
+    }
+
+    /*TRACKDAYS*/
+    .trackdays .container {
+        width: 900px;
+    }
+    .trackdays .container > h3 {
+        font-weight: 800;
+        margin-bottom: 20px;
+        width: 900px;
+    }
+    .trackdays .first-section p {
+        margin: 0 20px 50px 20px;
+    }
+    .trackdays .inhoud-first-section {
+        display: flex;
+        margin: 0 20px 50px 20px;
+        gap: 20px;
+    }
+    .trackdays .inhoud-first-section > ul {
+        list-style-type: none;
+    }
+    .trackdays .inhoud-first-section > ul > li {
+        position: relative;
+    }
+    .trackdays .inhoud-first-section > ul > li::before {
+        content: "●";
+        color: #0166B1;
+        position: absolute;
+        left: -20px;
+    }
+    .trackdays .quote {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .trackdays .quote p {
+        text-align: center;
+        position: relative;
+    }
+    .trackdays .quote i {
+        text-align: center;
+        padding: 0 25px 0 25px;
+    }
+    .trackdays .cars {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    .trackdays .cars img {
+        width: 250px;
+    }
+    .trackdays .formules {
+        width: 900px;
+    }
+    .trackdays .formules > ul {
+        list-style-type: none;
+    }
+    .trackdays .formules > ul > li {
+        position: relative;
+    }
+    .trackdays .formules > ul > li::before {
+        content: "●";
+        color: #0166B1;
+        position: absolute;
+        left: -20px;
+    }
+    .trackdays .formules > p {
+        margin-bottom: -40px;
+    }
+    .uitnodiging {
+        background-color: #FFC72C;
+    }
+    .uitnodiging p {
+        width: 900px;
+        font-weight: 500;
+    }
+    .trackdays .container {
+        width: 900px;
+    }
+    .trackdays .container > h4 {
+        width: 900px;
+        margin-top: -30px;
+    }
+    .interesse {
+        position: relative;
+        display: flex;
+        gap: 50px;
+        width: 900px;
+    }
+    .interesse > img {
+        margin-top: 20px;
+        width: 350px;
+        height: 100%;
+    }
+    .interesse > p {
+        width: 450px;
+        margin-bottom: 50px;
+    }
+    .interesse .rechthoek {
+        display: none;
+    }
+    .trackdays .interesse-kalender > a {
+        margin: 0 20px;
+        padding: 10px 20px;
+        background-color: #FFC72C;
+        border: none;
+        color: #2c2c2c;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    /*TEAM*/
+    .container-nav {
+        background-color: #2c2c2c;
+        height: 100px;
+    }
+    .meet-our-team .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .meet-our-team > .container > h3 {
+        margin-top: 50px;
+        width: 920px;
+    }
+    /*FIRST TEAM*/
+    .our-team-first {
+        width: 920px;
+        margin-top: 50px;
+        display: flex;
+    }
+    .our-team-first > img {
+        width: 250px;
+        height: auto;
+        border-radius: 50%;
+    }
+    /*DRIVERS TEAM*/
+    .our-team-drivers {
+        display: flex;
+        gap: 200px;
+        color: white;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .background-drivers {
+        padding-top: 20px;
+    }
+    .background-drivers > .container > h3 {
+        margin-top: 20px;
+        width: 920px;
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+    }
+    .luc-jansens > img, .jan-geunes > img {
+        border-radius: 50%;
+    }
+    /*TECHNICAL TEAM*/
+    .technical-team {
+        display: flex;
+        gap: 200px;
+        color: white;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .background-technical-team {
+        padding-top: 20px;
+    }
+    .technical-team img {
+        border-radius: 50%;
+    }
+    .background-technical-team > .container > h3 {
+        margin-top: 20px;
+        width: 920px;
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+    }
+    /*PITSTOP TEAM*/
+    .pitstop-assistance {
+        color: #2c2c2c;
+        justify-content: center;
+        align-items: center;
+    }
+    .background-pitstop-assistance {
+        padding-top: 20px 0 0 0;
+    }
+    .pitstop-assistance img {
+        border-radius: 50%;
+    }
+    .background-pitstop-assistance > .container > h3 {
+        width: 920px;
+        font-size: 30px;
+        font-weight: 800;
+        color: #2c2c2c;
+    }
+
+    /*CONTACT*/
+    .contact-formulier {
+        margin-top: 50px;
+        width: 900px;
+        margin-left: 20%;
+    }
+    label {
+        font-weight: 600;
+    }
+    .map {
+        display: none;
+    }
+    .formulier h3 {
+        font-size: 25px;
+        font-weight: 800;
+    }
+    input {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 550px;
+        border: solid 1px #2c2c2c74;
+    }
+    textarea {
+        margin-top: 5px;
+        padding: 5px;
+        border: solid 1px #2c2c2c74;
+        width: 550px;
+    }
+    .verzenden {
+        margin-top: 25px;
+        width: 100px;
+        border: none;
+        background-color: #FFC72C;
+        font-weight: 600;
+        padding: 6px 12px;
+        margin-bottom: 50px;
+    }
+
+    /*KALENDER*/
+    .kalender {
+        background-color: white;
+        height: max-content;
+        width: 900px;
+    }
+
+    /*BLOGPOSTS*/
+    .blog {
+        height: fit-content;
+        width: 900px;
+    }
+    .blog-posts {
+        display: flex;
+    }
+    .welkom {
+        width: 900px;
+        font-weight: 800;
+    }
+    .blog > .container > h3 {
+        margin-right: 20px;
+    }
+    .blog > .container > .nieuwe-post {
+        margin-top: 25px;
+        border: none;
+        background-color: #FFC72C;
+        color: #2c2c2c;
+        font-weight: 600;
+        padding: 6px 12px;
+        text-decoration: none;
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+    .post{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        justify-content: center;
+        width: 900px;
+    }
+    .italic {
+        font-style: italic;
+        margin-top: 0;
+    }
+    .aantal-likes {
+        font-size: 15px;
+    }
+    .post-small {
+        flex-basis: calc(50% - 50px);
+        max-width: calc(50% - 50px);
+        margin-bottom: -80px;
+    }
+    .post-small > h1 {
+        margin-top: 20px;
+    }
+    .post-small-description {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .post-small > a {
+        text-decoration: none;
+        color: #2c2c2c;
+    }
+    .post-small > img {
+        width: 300px;
+    }
+    .post-small button {
+        background-color: #FFC72C;
+        padding: 4px 8px;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .post-formulier {
+        width: 800px;
+        padding: 80px 0;
+    }
+    .opslaan {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        background-color: #FFC72C;
+        border: none;
+        font-weight: 800;
+    }
+    .post-buttons {
+        display: flex;
+        gap: 10px;
+    }
+    .bewerken, .verwijderen {
+        background-color: #FFC72C;
+        border: none;
+        color: #2c2c2c;
+        text-decoration: none;
+        font-size: 15px;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        font-weight: 700;
+    }
+    .back {
+        width: 900px;
+        margin: 50px auto 0 auto;
+        font-weight: 800;
+    }
+    .back a {
+        text-decoration: none;
+        color: #2c2c2c;
+    }
+    .aantal-likes {
+        font-weight: 800;
+        color: #2c2c2c;
+    }
+    .likes-show {
+        font-weight: 800;
+        color: #FFC72C;
+        margin-top: -10px;
+    }
+
+    /*PROFILE*/
+    .inlog-formulier, .aanmeld-formulier {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 10px 0;
+    }
+    .inloggen, .aanmelden {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-top: 50px;
+        background-color: #FFC72C;
+        border: none;
+        font-weight: 800;
+    }
+    .inloggen:hover, .aanmelden:hover {
+        background-color: #0166B1;
+        color: white;
+        font-weight: 800;
+    }
+
+    .insurance {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 200px;
+        padding: 5px;
+        border: solid 1px #2c2c2c74;
+    }
+    .geen-account, .wel-account {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 100px 0;
+    }
+    .geen-account > p > button, .wel-account > p > button {
+        background-color: transparent;
+        border: none;
+    }
+    .geen-account > p > button > a, .wel-account > p > button > a {
+        text-decoration: none;
+        color: #2c2c2c;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    /*FOOTER*/
+    footer {
+        background-color: #2c2c2c;
+        height: max-content;
+        color: white;
+        position: sticky;
+    }
+    .gegevens-eerste-deel {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 300px;
+        width: 100%;
+    }
+    .lijn {
+        border-bottom: 1px solid white;
+        width: 940px;
+        margin-top: 20px;
+    }
+    .gegevens-tweede-deel {
+        margin-top: 20px;
+        justify-content: center;
+        text-align: center;
+        width: 940px;
+        margin-bottom: 20px;
+    }
+    .gegevens-tweede-deel p {
+        font-size: 10px;
+        align-self: center;
+    }
+    .gegevens-tweede-deel > img {
+        width: auto;
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 1200px;
+        box-sizing: border-box;
+        z-index: 1;
+        margin: 0 auto 100px auto;
+    }
+
+    /*HEADER*/
+    header > img {
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1200px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        list-style: none;
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+    a:hover {
+        color: #0166B1;
+        font-weight: bold;
+    }
+    nav ul li:last-child a {
+        color: #FFC72C;
+        font-weight: 800;
+    }
+    nav ul li:last-child a:hover {
+        color: #0166B1;
+        font-weight: 800;
+    }
+    header > h1 {
+        font-family: "Bebas Neue", sans-serif;
+        position: absolute;
+        top: 23%;
+        left: 45%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: white;
+        font-size: 100px;
+        font-weight: 900;
+        text-shadow: 5px 5px 0px rgba(218, 218, 218, 0.25);
+    }
+    header > a {
+        position: absolute;
+        top: 55%;
+        left: 39%;
+        transform: translateX(50%);
+        text-align: center;
+        color: #FFC72C;
+        font-size: 20px;
+        font-weight: 900;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    header > a:hover {
+        color: white;
+        font-weight: 800;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 1200px;
+        box-sizing: border-box;
+        z-index: 1;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    /*MOTORSPORT*/
+    .motorsport .container > h3 {
+        font-weight: 800;
+        font-size: 25px;
+        margin-top: 40px;
+        align-self: flex-end;
+    }
+    .motorsport .first-section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    .motorsport .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 700px;
+    }
+    .motorsport .text-content > ul {
+        list-style-type: none;
+    }
+    .motorsport .text-content > ul > li {
+        position: relative;
+    }
+    .motorsport .text-content > ul > li::before {
+        content: "●";
+        color: #0166B1;
+        position: absolute;
+        left: -20px;
+    }
+    .motorsport .first-section .image-normal {
+        margin-right: 50px;
+        width: auto;
+        max-width: 400px;
+        height: max-content;
+        margin-top: 25px;
+    }
+    .motorsport .image-shadow {
+        display: none;
+        position: absolute;
+        left: 6%;
+        transform: translateX(10%);
+        opacity: 0.5;
+        z-index: -1;
+        filter: blur(5px);
+        width: 400px;
+        height: auto;
+    }
+    .motorsport .second-section {
+        margin-top: 50px;
+    }
+    .motorsport .images-second-section {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .motorsport .images-second-section img {
+        width: auto;
+        max-width: 400px;
+        height: max-content;
+        margin: 0 -10px;
+    }
+    .motorsport .images-second-section img:nth-child(2) {
+        width: auto;
+        max-width: 400px;
+        height: max-content;
+        position: relative;
+        top: -40px;
+    }
+    /*TRACKDAYS*/
+    .trackdays .container > h3 {
+        font-weight: 800;
+        font-size: 25px;
+        align-self: flex-start;
+        margin: -50px 0 20px 20px;
+    }
+    .trackdays .first-section p {
+        margin-bottom: 50px;
+    }
+    .trackdays .inhoud-first-section {
+        display: flex;
+        margin-bottom: 50px;
+        gap: 50px;
+    }
+    .trackdays .inhoud-first-section > ul {
+        list-style-type: none;
+    }
+    .trackdays .inhoud-first-section > ul > li {
+        position: relative;
+    }
+    .trackdays .inhoud-first-section > ul > li::before {
+        content: "●";
+        color: #0166B1;
+        position: absolute;
+        left: -20px;
+    }
+    .trackdays .quote {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .trackdays .quote p {
+        text-align: center;
+        position: relative;
+        color: #2c2c2c;
+    }
+    .trackdays .quote i {
+        display: inherit;
+        text-align: center;
+        font-size: 25px;
+        padding: 0 25px 0 25px;
+    }
+    .trackdays .cars {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    .trackdays .formules {
+        width: 900px;
+    }
+    .trackdays .formules > ul {
+        list-style-type: none;
+    }
+    .trackdays .formules > ul > li {
+        position: relative;
+    }
+    .trackdays .formules > ul > li::before {
+        content: "●";
+        color: #0166B1;
+        position: absolute;
+        left: -20px;
+    }
+    .uitnodiging {
+        background-color: #FFC72C;
+    }
+    .uitnodiging p {
+        width: 900px;
+        text-align: center;
+        padding: 50px;
+        font-weight: 500;
+    }
+    .interesse {
+        position: relative;
+        display: flex;
+        gap: 50px;
+    }
+    .interesse > img {
+        width: auto;
+        max-width: 400px;
+        height: auto;
+        z-index: 1;
+    }
+    .interesse > p {
+        width: 700px;
+    }
+    .interesse .rechthoek {
+        position: absolute;
+        left: -25px;
+        top: -25px;
+        width: 350px;
+        height: 220px;
+        border: 2px solid #0166b1;
+        padding: 20px;
+        z-index: 0;
+    }
+    .trackdays .interesse-kalender > a {
+        padding: 10px 20px;
+        background-color: #FFC72C;
+        border: none;
+        color: #2c2c2c;
+        text-decoration: none;
+        font-weight: 800;
+    }
+    .trackdays .interesse-kalender > a:hover {
+        background-color: #0166B1;
+        color: white;
+        cursor: pointer;
+    }
+
+    /*CONTACT*/
+    .contact-formulier {
+        display: flex;
+        justify-content: space-between;
+    }
+    .map, .formulier {
+        width: 500px;
+    }
+    .map {
+        display: inherit;
+        margin: 80px 50px 80px -150px;
+    }
+    .formulier {
+        margin: 80px 100px 80px 50px;
+    }
+    label {
+        font-weight: 600;
+    }
+    .formulier h3 {
+        font-size: 30px;
+        font-weight: 800;
+        margin-top: 0;
+    }
+    input {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 400px;
+        padding: 5px;
+        border: solid 1px #2c2c2c74;
+    }
+    textarea {
+        margin-top: 5px;
+        width: 400px;
+        padding: 5px;
+        border: solid 1px #2c2c2c74;
+    }
+    .verzenden {
+        margin-top: 25px;
+        width: 100px;
+        border: none;
+        background-color: #FFC72C;
+        font-weight: 600;
+        padding: 6px 12px;
+    }
+    .verzenden:hover {
+        background-color: #0166B1;
+        color: white;
+        cursor: pointer;
+    }
+
+    /*KALENDER*/
+    .kalender {
+        background-color: white;
+        height: max-content;
+        width: 1200px;
+    }
+
+    /*BLOGPOSTS*/
+    .blog {
+        height: fit-content;
+        width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .blog-posts {
+        display: flex;
+    }
+    .blog > .container > h3 {
+        margin-right: 50px;
+    }
+    .welkom {
+        justify-content: left;
+        width: 1100px;
+        margin: 0 auto;
+        font-weight: 800;
+    }
+    .blog > .container > .nieuwe-post {
+        border: none;
+        background-color: #FFC72C;
+        color: #2c2c2c;
+        font-weight: 600;
+        padding: 6px 12px;
+        text-decoration: none;
+        margin: 25px 50px 80px 0;
+    }
+    .blog > .container > .nieuwe-post:hover {
+        margin-top: 25px;
+        border: none;
+        background-color: #0166B1;
+        color: white;
+        font-weight: 600;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+    .post{
+        gap: 50px;
+        width: 1200px;
+    }
+    .post-small {
+        flex-basis: calc(30% - 30px);
+        max-width: calc(30% - 30px);
+    }
+    .italic {
+        font-style: italic;
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .post i {
+        float: right;
+        margin-bottom: 10px;
+    }
+    .post-small-description {
+        margin-bottom: 20px;
+    }
+    .post-small > a {
+        text-decoration: none;
+        color: #2c2c2c;
+    }
+    .post-small > a:hover {
+        color: #FFC72C;
+    }
+    .post-formulier {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 10px auto;
+        max-width: 1100px;
+        width: 100%;
+    }
+    .opslaan {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        background-color: #FFC72C;
+        border: none;
+        font-weight: 800;
+    }
+    .opslaan:hover {
+        background-color: #0166B1;
+        color: white;
+        font-weight: 800;
+    }
+    .post-buttons {
+        display: flex;
+        gap: 10px;
+    }
+    .bewerken, .verwijderen {
+        background-color: #FFC72C;
+        border: none;
+        color: #2c2c2c;
+        text-decoration: none;
+        font-size: 15px;
+        width: 200px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        font-weight: 700;
+    }
+    .bewerken:hover, .verwijderen:hover {
+        background-color: #0166B1;
+        color: white;
+    }
+    .back {
+        display: flex;
+        justify-content: left;
+        width: 1100px;
+        margin: 50px auto 0 auto;
+        font-weight: 800;
+    }
+    .back a {
+        text-decoration: none;
+        color: #2c2c2c;
+    }
+    .post-small button {
+        background-color: #FFC72C;
+        padding: 4px 8px;
+        border: none;
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .aantal-likes {
+        display: flex;
+        position: absolute;
+        font-size: 15px;
+        margin-left: 290px;
+        font-weight: 800;
+        color: #2c2c2c;
+    }
+    .post-small > h1 {
+        margin-top: 50px;
+    }
+    .likes-show {
+        font-weight: 800;
+        color: #FFC72C;
+        display: flex;
+        position: absolute;
+        margin-left: 1000px;
+        margin-top: -10px;
+    }
+
+    /*PROFILE*/
+    .inlog-formulier, .aanmeld-formulier {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 10px 0;
+    }
+    .inloggen, .aanmelden {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-top: 50px;
+        background-color: #FFC72C;
+        border: none;
+        font-weight: 800;
+    }
+    .inloggen:hover, .aanmelden:hover {
+        background-color: #0166B1;
+        color: white;
+        font-weight: 800;
+    }
+    .insurance {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 200px;
+        padding: 5px;
+        border: solid 1px #2c2c2c74;
+    }
+    .geen-account, .wel-account {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 100px 0;
+    }
+    .geen-account > p > button, .wel-account > p > button {
+        background-color: transparent;
+        border: none;
+    }
+    .geen-account > p > button > a, .wel-account > p > button > a {
+        text-decoration: none;
+        color: #2c2c2c;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .geen-account > p > button > a:hover, .wel-account > p > button > a:hover {
+        color: #0166B1;
+    }
+
+    /*FOOTER*/
+    footer {
+        background-color: #2c2c2c;
+        height: max-content;
+        color: white;
+        position: sticky;
+    }
+    .gegevens-eerste-deel {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 300px;
+        width: 100%;
+    }
+    .lijn {
+        border-bottom: 1px solid white;
+        width: 1200px;
+        margin-top: 20px;
+    }
+    .gegevens-tweede-deel {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 700px;
+        width: 1200px;
+    }
+    .gegevens-tweede-deel p {
+        font-size: 10px;
+        align-self: center;
+    }
+    .gegevens-tweede-deel > img {
+        width: auto;
+        max-width: 200px;
+        height: auto;
+    }
+}

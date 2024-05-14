@@ -76,7 +76,7 @@
             </p>
         </div>
         <div class="interesse-kalender">
-            <a href="{{ route('kalender') }}">Bekijk de kalender</a>
+            <a href="{{ route('events') }}">Bekijk de kalender</a>
         </div>
     </div>
 </section>

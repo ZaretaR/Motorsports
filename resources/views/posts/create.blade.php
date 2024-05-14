@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/style.css', 'resources/js/app.js'])
 </head>
 
 <body>
@@ -14,6 +14,13 @@
             @include('includes/nav')
         </div>
     </header>
+
+    <div class="back">
+        <a href="{{ route('posts.index') }}">
+            <i class="fa-solid fa-chevron-left" style="color: #2c2c2c;">
+            </i>Terug
+        </a>
+    </div>
 
     <section class="post-formulier">
         <form action="/posts" method="post" enctype="multipart/form-data" novalidate>

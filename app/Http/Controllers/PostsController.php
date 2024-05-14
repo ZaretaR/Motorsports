@@ -41,12 +41,12 @@ class PostsController extends Controller
             'image' => 'image',
         ]);
 
-        $administratorId = Auth::id();
+        $userId = Auth::id();
         $post = new Post();
         $post->title = $request->title;
         $post->image = $request->image->store('public/images');
         $post->description = $request->description;
-        $post->administator_id = $administratorId;
+        $post->user_id = $userId;
         $post->save();
 
         $numberOfLikes = $post->likes()->count();
@@ -72,7 +72,8 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        $post = Post::find($id);
+        $post = Post::findOrFail($id);
+
         return view('posts.edit', [
             'post' => $post,
         ]);
@@ -108,7 +109,8 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        $post = Post::find($id);
+        $post = Post::findOrFail($id);
+
         $post->delete();
         return redirect('/posts');
     }

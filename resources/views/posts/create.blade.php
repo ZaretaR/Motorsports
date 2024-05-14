@@ -15,6 +15,13 @@
         </div>
     </header>
 
+    <div class="back">
+        <a href="{{ route('posts.index') }}">
+            <i class="fa-solid fa-chevron-left" style="color: #2c2c2c;">
+            </i>Terug
+        </a>
+    </div>
+
     <section class="post-formulier">
         <form action="/posts" method="post" enctype="multipart/form-data" novalidate>
             @csrf

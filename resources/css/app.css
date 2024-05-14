@@ -36,10 +36,6 @@ a {
     text-decoration: underline;
     text-underline-offset: 10px;
 }
-a:active {
-    color: #0166B1;
-    font-weight: bold;
-}
 a:hover {
     color: #0166B1;
     font-weight: bold;

@@ -28,7 +28,7 @@ span {
     header > img {
         display: none;
     }
-    .container-nav {
+    .container-nav, .container-home-nav {
         background-color: #2c2c2c;
         height: 60px;
         position: fixed;
@@ -306,9 +306,6 @@ span {
     label {
         font-weight: 600;
     }
-    .map {
-        display: none;
-    }
     .formulier h3 {
         font-weight: 800;
     }
@@ -547,8 +544,6 @@ span {
     }
     #main-nav {
         display: flex;
-        background-color: #2c2c2c;
-        position: static;
         margin-top: 0;
     }
     nav ul {
@@ -573,7 +568,7 @@ span {
         text-decoration: underline;
         text-underline-offset: 10px;
     }
-    nav ul li:last-child a {
+    #main-nav ul li:last-child a {
         color: #FFC72C;
         font-weight: 800;
     }
@@ -771,16 +766,12 @@ span {
     }
 
     /*TEAM*/
-    .container-nav {
-        background-color: #2c2c2c;
-        height: 100px;
-    }
     .meet-our-team .container {
         justify-content: center;
         align-items: center;
     }
     .meet-our-team > .container > h3 {
-        margin-top: 50px;
+        margin-top: 120px;
         width: 920px;
     }
     /*FIRST TEAM*/
@@ -859,15 +850,15 @@ span {
 
     /*CONTACT*/
     .contact-formulier {
-        margin-top: 50px;
+        margin-top: 120px;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulier {
         width: 900px;
-        margin-left: 20%;
     }
     label {
         font-weight: 600;
-    }
-    .map {
-        display: none;
     }
     .formulier h3 {
         font-size: 25px;
@@ -916,7 +907,7 @@ span {
         font-weight: 800;
     }
     .blog > .container > h3 {
-        margin-right: 20px;
+        margin: 0 20px 0 0;
     }
     .blog > .container > .nieuwe-post {
         margin-top: 25px;
@@ -1002,7 +993,7 @@ span {
     }
     .back {
         width: 900px;
-        margin: 50px auto 0 auto;
+        margin: 100px auto 0 auto;
         font-weight: 800;
     }
     .back a {
@@ -1024,7 +1015,7 @@ span {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 100px 0 10px 0;
+        margin: 120px 0 10px 0;
     }
     .inloggen, .aanmelden {
         display: flex;
@@ -1377,38 +1368,32 @@ span {
 
     /*CONTACT*/
     .contact-formulier {
-        display: flex;
-        justify-content: space-between;
-    }
-    .map, .formulier {
-        width: 500px;
-    }
-    .map {
-        display: inherit;
-        margin: 80px 50px 80px -150px;
+        margin-top: 120px;
+        justify-content: center;
+        align-items: center;
     }
     .formulier {
-        margin: 80px 100px 80px 50px;
+        width: 1100px;
     }
     label {
         font-weight: 600;
     }
     .formulier h3 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 800;
     }
     input {
         margin-top: 5px;
-        margin-bottom: 10px;
-        width: 400px;
+        margin-bottom: 20px;
         padding: 5px;
+        width: 550px;
         border: solid 1px #2c2c2c74;
     }
     textarea {
         margin-top: 5px;
-        width: 400px;
         padding: 5px;
         border: solid 1px #2c2c2c74;
+        width: 550px;
     }
     .verzenden {
         margin-top: 25px;
@@ -1417,11 +1402,7 @@ span {
         background-color: #FFC72C;
         font-weight: 600;
         padding: 6px 12px;
-    }
-    .verzenden:hover {
-        background-color: #0166B1;
-        color: white;
-        cursor: pointer;
+        margin-bottom: 50px;
     }
 
     /*KALENDER*/

@@ -1,6 +1,6 @@
 <header>
     <img src="images/achtergrond.jpg" alt="achtergrond">
-    <div class="container-nav">
+    <div class="container-home-nav">
         <label for="menu-toggle" class="menu-toggle"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
         <input type="checkbox" id="menu-toggle">
         <nav id="main-nav">

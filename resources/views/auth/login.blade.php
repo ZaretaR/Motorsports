@@ -3,6 +3,7 @@
         <form action="{{ route('login') }}" method="post" novalidate>
             @csrf
             Gebruikersnaam:
+            <br>
             @error('username')
                 <span>{{ $message }}</span>
             @enderror
@@ -10,11 +11,13 @@
             <input type="username" name="username" id="username" value="{{ old('username') }}">
             <br>
             Wachtwoord:
+            <br>
             @error('password')
                 <span>{{ $message }}</span>
             @enderror
             <br>
             <input type="password" name="password" id="password">
+            <br>
 
             <input type="submit" class="inloggen" name="inloggen" id="inloggen" value="inloggen">
     </section>

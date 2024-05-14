@@ -20,6 +20,7 @@
             <form action="{{ route('register') }}" method="post" novalidate>
                 @csrf
                 Gebruikersnaam:
+                <br>
                 @error('username')
                     <span>{{ $message }}</span>
                 @enderror
@@ -27,6 +28,7 @@
                 <input type="text" name="username" id="username" value="{{ old('username') }}">
                 <br>
                 Email:
+                <br>
                 @error('email')
                     <span>{{ $message }}</span>
                 @enderror
@@ -34,6 +36,7 @@
                 <input type="email" name="email" id="email" value="{{ old('email') }}">
                 <br>
                 Wachtwoord:
+                <br>
                 @error('password')
                     <span>{{ $message }}</span>
                 @enderror
@@ -41,12 +44,14 @@
                 <input type="password" name="password" id="password">
                 <br>
                 Wachtwoord bevestigen:
+                <br>
                 @error('password_confirmation')
                     <span>{{ $message }}</span>
                 @enderror
                 <br>
                 <input type="password" name="password_confirmation" id="password_confirmation">
 
+                <br>
                 <input type="submit" class="aanmelden" name="aanmelden" id="aanmelden" value="Aanmelden">
         </section>
 

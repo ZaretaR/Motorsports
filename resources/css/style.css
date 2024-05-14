@@ -249,7 +249,7 @@ span {
         width: 350px;
     }
     .luc-jansens h4, .jan-geunes h4 {
-        margin-left: 20%;
+        margin-left: 35%;
     }
 
     /*TECHNICAL TEAM*/
@@ -270,6 +270,7 @@ span {
     }
     .technical-team h4 {
         color: white;
+        margin-left: 8%;
     }
     .technical-team {
         width: 350px;
@@ -299,7 +300,7 @@ span {
     }
     .pitstop-assistance h4 {
         width: 350px;
-        margin-left: 20%;
+        margin-left: 30%;
         margin-bottom: 0;
     }
 
@@ -835,6 +836,9 @@ span {
     .luc-jansens > img, .jan-geunes > img {
         border-radius: 50%;
     }
+    .our-team-drivers > .luc-jansens > h4, .our-team-drivers > .jan-geunes > h4 {
+        margin-left: 48%;
+    }
     /*TECHNICAL TEAM*/
     .technical-team {
         display: flex;
@@ -856,6 +860,9 @@ span {
         font-size: 30px;
         font-weight: 800;
         color: white;
+    }
+    .background-technical-team > .container > .technical-team > .laurens-dujardin > h4, .background-technical-team > .container > .technical-team > .brecht-reynders > h4 {
+        margin-left: 15%;
     }
     /*PITSTOP TEAM*/
     .pitstop-assistance {

@@ -8,7 +8,7 @@
     @endif
     <h1>{{ $post->title }}</h1>
     <p>{{ $post->created_at }}</p>
-    <img style="max-width:200px" src="{{ Storage::url('images/' . $post->image) }}">
+    <img style="max-width:300px" src="{{ Storage::url('images/' . $post->image) }}">
     <div class="post-small-description">
         @if (strlen($post->description) > 100)
             {{ substr($post->description, 0, 100) }}...

@@ -412,6 +412,7 @@ span {
         margin: 50px auto 50px auto;
         max-width: 350px;
         width: 100%;
+        height: 45vh;
     }
     .opslaan {
         margin-bottom: 50px;
@@ -460,6 +461,9 @@ span {
     }
 
     /*PROFILE*/
+    .profiel-pagina {
+        height: 45vh;
+    }
     .inlog-formulier, .aanmeld-formulier {
         display: flex;
         justify-content: center;
@@ -511,7 +515,7 @@ span {
         background-color: #2c2c2c;
         color: white;
         width: 100%;
-        height: 60vh;
+        height: 45vh;
     }
     .gegevens-eerste-deel {
         margin-top: 20px;
@@ -887,6 +891,7 @@ span {
     .contact-formulier {
         width: 80%;
         justify-content: center;
+        height: 55vh;
     }
     .contact-formulier h3 {
         margin-top: 50px;
@@ -1004,7 +1009,7 @@ span {
         margin: 100px auto 100px auto;
         max-width: 900px;
         width: 100%;
-        height: max-content;
+        height: 50vh;
     }
     .opslaan {
         margin-bottom: 50px;
@@ -1054,7 +1059,7 @@ span {
 
     /*PROFILE*/
     .profiel-pagina {
-        height: 50vh;
+        height: 60vh;
     }
     .inlog-formulier, .aanmeld-formulier {
         display: flex;
@@ -1107,7 +1112,7 @@ span {
         background-color: #2c2c2c;
         color: white;
         width: 100%;
-        height: 40vh;
+        height: 30vh;
     }
     .gegevens-eerste-deel {
         margin-top: 20px;
@@ -1531,7 +1536,7 @@ span {
         margin: 100px auto 100px auto;
         max-width: 1100px;
         width: 100%;
-        height: max-content;
+        height: 50vh;
     }
     .opslaan {
         display: flex;
@@ -1662,7 +1667,7 @@ span {
         background-color: #2c2c2c;
         color: white;
         width: 100%;
-        height: 40vh;
+        height: 30vh;
     }
     .gegevens-eerste-deel {
         margin-top: 20px;

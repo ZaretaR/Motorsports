@@ -851,11 +851,14 @@ span {
     /*CONTACT*/
     .contact-formulier {
         margin-top: 120px;
-        justify-content: center;
-        align-items: center;
     }
     .formulier {
-        width: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 10px auto;
+        max-width: 900px;
+        width: 100%;
     }
     label {
         font-weight: 600;
@@ -1369,11 +1372,14 @@ span {
     /*CONTACT*/
     .contact-formulier {
         margin-top: 120px;
-        justify-content: center;
-        align-items: center;
     }
     .formulier {
-        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 10px auto;
+        max-width: 1100px;
+        width: 100%;
     }
     label {
         font-weight: 600;
@@ -1423,7 +1429,7 @@ span {
         display: flex;
     }
     .blog > .container > h3 {
-        margin-right: 50px;
+        margin: 120px 50px 0 0;
     }
     .welkom {
         justify-content: left;
@@ -1524,7 +1530,7 @@ span {
         display: flex;
         justify-content: left;
         width: 1100px;
-        margin: 50px auto 0 auto;
+        margin: 120px auto 0 auto;
         font-weight: 800;
     }
     .back a {

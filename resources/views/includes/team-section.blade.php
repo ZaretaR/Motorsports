@@ -63,7 +63,4 @@
             </div>
         </div>
     </div>
-    <div class="background-pictures-team">
-        <img src="images/grt-2.png" alt="grt-2">
-    </div>
 </section>

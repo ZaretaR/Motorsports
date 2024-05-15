@@ -56,7 +56,6 @@ class PostsController extends Controller
 
         $numberOfLikes = $post->likes()->count();
 
-        //return redirect('/posts');
         return view('posts.index', [
             'posts' => Post::all(),
             'numberOfLikes' => $numberOfLikes,

@@ -49,7 +49,7 @@ class AuthController extends Controller
         $user->role_id = 1;
         $user->save();
 
-        return redirect()->intended(route('login'));
+        return redirect()->intended(route('profile'));
     }
 
     public function logout() {

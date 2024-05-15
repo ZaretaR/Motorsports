@@ -458,6 +458,32 @@ span {
         margin: -10px 10px 0 0;
     }
 
+    /*KALENDER*/
+    #calendar {
+        margin-top: 150px;
+    }
+    .fc-icon {
+        color: #2c2c2c;
+    }
+    .fc-day-header > span {
+        color: #2c2c2c;
+    }
+    .fc-day-number {
+        color: #2c2c2c;
+    }
+    .fc-event-container > a {
+        border-color: transparent;
+        background-color: #FFC72C;
+    }
+    .fc-content > span {
+        color: #2c2c2c;
+        background-color: transparent;
+    }
+
+    .fc-left {
+        border-color: none;
+    }
+
     /*PROFILE*/
     .profiel-pagina {
         height: max-content;
@@ -933,7 +959,27 @@ span {
     #calendar {
         margin-top: 150px;
     }
+    .fc-icon {
+        color: #2c2c2c;
+    }
+    .fc-day-header > span {
+        color: #2c2c2c;
+    }
+    .fc-day-number {
+        color: #2c2c2c;
+    }
+    .fc-event-container > a {
+        border-color: transparent;
+        background-color: #FFC72C;
+    }
+    .fc-content > span {
+        color: #2c2c2c;
+        background-color: transparent;
+    }
 
+    .fc-left {
+        border-color: none;
+    }
 
     /*BLOGPOSTS*/
     .blog {
@@ -1468,6 +1514,27 @@ span {
     #calendar {
         margin-top: 150px;
     }
+    .fc-icon {
+        color: #2c2c2c;
+    }
+    .fc-day-header > span {
+        color: #2c2c2c;
+    }
+    .fc-day-number {
+        color: #2c2c2c;
+    }
+    .fc-event-container > a {
+        border-color: transparent;
+        background-color: #FFC72C;
+    }
+    .fc-content > span {
+        color: #2c2c2c;
+        background-color: transparent;
+    }
+
+    .fc-left {
+        border-color: none;
+    }
 
     /*BLOGPOSTS*/
     .blog {
@@ -1583,7 +1650,7 @@ span {
         display: flex;
         justify-content: left;
         width: 1100px;
-        margin: 120px auto 100px auto;
+        margin: 140px auto 100px auto;
         font-weight: 800;
     }
     .back a {
@@ -1600,7 +1667,7 @@ span {
     }
     .aantal-likes {
         font-size: 15px;
-        margin-left: 30px;
+        margin-left: 5px;
         font-weight: 800;
         color: #2c2c2c;
     }

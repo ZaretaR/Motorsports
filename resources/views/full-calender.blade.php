@@ -22,6 +22,8 @@
         <div id="calendar"></div>
     </div>
 
+    @include('includes/footer')
+
     <script>
         $(document).ready(function() {
             $.ajaxSetup({

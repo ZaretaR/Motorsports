@@ -339,11 +339,8 @@ span {
         margin-bottom: 50px;
     }
 
-    /*KALENDER*/
-    .kalender {
-        background-color: white;
-        height: max-content;
-        width: 350px;
+    #calendar {
+        margin-top: 150px;
     }
 
     /*BLOGPOSTS*/
@@ -933,11 +930,10 @@ span {
     }
 
     /*KALENDER*/
-    .kalender {
-        background-color: white;
-        height: max-content;
-        width: 900px;
+    #calendar {
+        margin-top: 150px;
     }
+
 
     /*BLOGPOSTS*/
     .blog {
@@ -1469,10 +1465,8 @@ span {
     }
 
     /*KALENDER*/
-    .kalender {
-        background-color: white;
-        height: max-content;
-        width: 1200px;
+    #calendar {
+        margin-top: 150px;
     }
 
     /*BLOGPOSTS*/

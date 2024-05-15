@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FullCalenderController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\KalenderController;
 use App\Http\Controllers\PostLikeController;
@@ -25,7 +26,6 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/team', [TeamController::class, 'team'])->name('team');
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'verzenden']);
-Route::get('/kalender', [KalenderController::class, 'kalender'])->name('kalender')->middleware('auth');
 Route::get('/profile', [ProfileController::class, 'profile'])->name('profile')->middleware('guest');
 
 //BLOG -> POSTS
@@ -49,3 +49,5 @@ Route::post('/posts/{post}/like', [PostLikeController::class, 'like'])->name('po
 Route::delete('/posts/{post}/unlike', [PostLikeController::class, 'unlike'])->name('posts.unlike')->middleware('auth');
 
 //KALENDER
+Route::get('/full-calendar', [FullCalenderController::class, 'index'])->name('full-calendar')->middleware('auth');
+Route::post('/full-calendar/action', [FullCalenderController::class, 'action'])->name('full-calendar.action')->middleware('auth');

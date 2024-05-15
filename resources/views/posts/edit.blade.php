@@ -23,15 +23,11 @@
     </div>
 
     <section class="post-formulier">
-        @if ((auth()->user() && auth()->user()->id == $post->user_id) || auth()->user()->isAdmin())
-            <form action="/posts/{{ $post->id }}" method="post" enctype="multipart/form-data">
-                @method('PUT')
-                @csrf
-                @include('posts.includes.form')
-            </form>
-        @else
-            <p>U heeft geen toestemming om deze post te bewerken</p>
-        @endif
+        <form action="/posts/{{ $post->id }}" method="post" enctype="multipart/form-data">
+            @method('PUT')
+            @csrf
+            @include('posts.includes.form')
+        </form>
     </section>
     @include('includes/footer')
 </body>

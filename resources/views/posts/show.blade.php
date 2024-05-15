@@ -32,14 +32,16 @@
             <p>{{ $post->created_at }}</p>
             <img style="max-width:300px" src="{{ Storage::url('images/' . $post->image) }}">
             <p class="post-description">{{ $post->description }}</p>
-            <div class="post-buttons">
-                <a class="bewerken" href="{{ route('posts.edit', $post->id) }}">Bewerken</a>
-                <form action="{{ route('posts.destroy', $post->id) }}" method="post" enctype="multipart/form-data">
-                    @method('delete')
-                    @csrf
-                    <button class="verwijderen" type="submit">Verwijderen</button>
-                </form>
-            </div>
+            @if (auth()->user()->id == $post->user_id || auth()->user()->username === 'admin')
+                <div class="post-buttons">
+                    <a class="bewerken" href="{{ route('posts.edit', $post->id) }}">Bewerken</a>
+                    <form action="{{ route('posts.destroy', $post->id) }}" method="post" enctype="multipart/form-data">
+                        @method('delete')
+                        @csrf
+                        <button class="verwijderen" type="submit">Verwijderen</button>
+                    </form>
+                </div>
+            @endif
         </div>
     </section>
     @include('includes/footer')

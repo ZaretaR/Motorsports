@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Symfony\Component\VarDumper\Caster\RedisCaster;
 
 class PostsController extends Controller
 {
@@ -56,7 +57,6 @@ class PostsController extends Controller
 
         $numberOfLikes = $post->likes()->count();
 
-        //return redirect('/posts');
         return view('posts.index', [
             'posts' => Post::all(),
             'numberOfLikes' => $numberOfLikes,
@@ -79,9 +79,14 @@ class PostsController extends Controller
     {
         $post = Post::find($id);
 
-        return view('posts.edit', [
-            'post' => $post,
-        ]);
+        if(auth()->user()->id === $post->user_id || auth()->user()->username === 'admin') {
+            return view('posts.edit', [
+                'post' => $post,
+            ]);
+        }
+        else {
+            return Redirect('/posts');
+        }
     }
 
     /**
@@ -116,7 +121,13 @@ class PostsController extends Controller
     {
         $post = Post::find($id);
 
-        $post->delete();
-        return redirect('/posts');
+        if(auth()->user()->id === $post->user_id || auth()->user()->username === 'admin') {
+            $post->delete();
+            return redirect('/posts');
+        }
+        else {
+            return Redirect('/posts');
+        }
+
     }
 }

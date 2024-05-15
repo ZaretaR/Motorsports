@@ -493,7 +493,12 @@ span {
         padding: 5px;
         border: solid 1px #2c2c2c74;
     }
-    .geen-account, .wel-account {
+    .geen-account {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 200px 0;
+    }
+    .wel-account {
         display: flex;
         justify-content: center;
         margin: 0 0 100px 0;
@@ -1021,6 +1026,7 @@ span {
     .post-buttons {
         display: flex;
         gap: 10px;
+        margin-bottom: 50px;
     }
     .bewerken, .verwijderen {
         background-color: #FFC72C;
@@ -1065,7 +1071,7 @@ span {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 150px 0 10px 0;
+        margin: 150px 0 50px 0;
     }
     .inloggen, .aanmelden {
         display: flex;
@@ -1089,10 +1095,15 @@ span {
         padding: 5px;
         border: solid 1px #2c2c2c74;
     }
-    .geen-account, .wel-account {
+    .geen-account {
         display: flex;
         justify-content: center;
-        margin: 0 0 100px 0;
+        margin: 0 0 350px 0;
+    }
+    .wel-account {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 200px 0;
     }
     .geen-account > p > button, .wel-account > p > button {
         background-color: transparent;
@@ -1454,7 +1465,7 @@ span {
         background-color: #FFC72C;
         font-weight: 600;
         padding: 6px 12px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     /*KALENDER*/
@@ -1640,10 +1651,15 @@ span {
         padding: 5px;
         border: solid 1px #2c2c2c74;
     }
-    .geen-account, .wel-account {
+    .geen-account {
         display: flex;
         justify-content: center;
-        margin: 0 0 100px 0;
+        margin: 0 0 470px 0;
+    }
+    .wel-account {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 280px 0;
     }
     .geen-account > p > button, .wel-account > p > button {
         background-color: transparent;

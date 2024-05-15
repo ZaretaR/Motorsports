@@ -25,6 +25,7 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/team', [TeamController::class, 'team'])->name('team');
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'verzenden']);
+Route::get('/kalender', [KalenderController::class, 'kalender'])->name('kalender')->middleware('auth');
 Route::get('/profile', [ProfileController::class, 'profile'])->name('profile')->middleware('guest');
 
 //BLOG -> POSTS
@@ -48,9 +49,3 @@ Route::post('/posts/{post}/like', [PostLikeController::class, 'like'])->name('po
 Route::delete('/posts/{post}/unlike', [PostLikeController::class, 'unlike'])->name('posts.unlike')->middleware('auth');
 
 //KALENDER
-//Route::get('/kalender', [KalenderController::class, 'kalender'])->name('kalender')->middleware('auth');
-Route::get('/events', [KalenderController::class, 'getEvents'])->name('events')->middleware('auth');
-Route::delete('/events/{id}', [KalenderController::class, 'deleteEvent'])->name('events.delete')->middleware('auth');
-Route::put('/events/{id}', [KalenderController::class, 'updateEvent'])->name('events.update')->middleware('auth');
-Route::put('/events/{id}/resize', [KalenderController::class, 'eventResize'])->name('events.resize')->middleware('auth');
-Route::get('/events/zoeken', [KalenderController::class, 'searchEvents'])->name('events.search', [KalenderController::class, 'search'])->middleware('auth');

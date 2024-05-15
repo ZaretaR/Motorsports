@@ -16,7 +16,7 @@ class FullCalenderController extends Controller
                 ->get(['id', 'title', 'start', 'end']);
             return response()->json($data);
         }
-        return view('full-calender');
+        return view('full-calendar');
     }
 
     public function action(Request $request, $id)

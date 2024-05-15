@@ -12,6 +12,9 @@ span {
     color: red;
     font-size: 12px;
 }
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+
+}
 
 @media screen and (min-width: 400px) {
     .container {
@@ -339,10 +342,6 @@ span {
         margin-bottom: 50px;
     }
 
-    #calendar {
-        margin-top: 150px;
-    }
-
     /*BLOGPOSTS*/
     .blog {
         height: fit-content;
@@ -460,7 +459,8 @@ span {
 
     /*KALENDER*/
     #calendar {
-        margin-top: 150px;
+        margin: 150px auto;
+        height: max-content;
     }
     .fc-icon {
         color: #2c2c2c;
@@ -479,7 +479,6 @@ span {
         color: #2c2c2c;
         background-color: transparent;
     }
-
     .fc-left {
         border-color: none;
     }
@@ -573,7 +572,6 @@ span {
         max-width: 150px;
         height: auto;
     }
-
 }
 
 @media screen and (min-width: 960px) {
@@ -957,7 +955,7 @@ span {
 
     /*KALENDER*/
     #calendar {
-        margin-top: 150px;
+        margin: 150px auto;
     }
     .fc-icon {
         color: #2c2c2c;
@@ -1512,7 +1510,7 @@ span {
 
     /*KALENDER*/
     #calendar {
-        margin-top: 150px;
+        margin: 150px auto;
     }
     .fc-icon {
         color: #2c2c2c;

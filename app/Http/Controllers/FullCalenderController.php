@@ -19,7 +19,7 @@ class FullCalenderController extends Controller
         return view('full-calender');
     }
 
-    public function action(Request $request)
+    public function action(Request $request, $id)
     {
         if($request->ajax())
         {

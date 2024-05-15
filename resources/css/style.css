@@ -12,6 +12,10 @@ span {
     color: red;
     font-size: 12px;
 }
+.status{
+    color: green;
+    font-weight: 600px;
+}
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 }

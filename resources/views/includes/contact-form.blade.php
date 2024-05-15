@@ -2,7 +2,7 @@
     @csrf
 
     @if (session('status'))
-        <p>{{ session('status') }}</p>
+        <p class="status">{{ session('status') }}</p>
     @endif
 
     <div>

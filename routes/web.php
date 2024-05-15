@@ -6,10 +6,10 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\FullCalenderController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\KalenderController;
 use App\Http\Controllers\PostLikeController;
+use App\Http\Controllers\FullCalenderController;
 
 /*
 |--------------------------------------------------------------------------

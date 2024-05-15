@@ -16,10 +16,10 @@ class FullCalenderController extends Controller
                 ->get(['id', 'title', 'start', 'end']);
             return response()->json($data);
         }
-        return view('full-calendar');
+        return view('full-calender');
     }
 
-    public function action(Request $request, $id)
+    public function action(Request $request)
     {
         if($request->ajax())
         {

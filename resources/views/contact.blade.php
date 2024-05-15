@@ -11,9 +11,11 @@
 <body>
     @include('includes/nav')
 
-    <div class="contact-formulier">
-        <h3>Contact formulier</h3>
-        @include('includes/contact-form')
+    <div class="container">
+        <div class="contact-formulier">
+            <h3>Contact formulier</h3>
+            @include('includes/contact-form')
+        </div>
     </div>
 
     @include('includes/footer')

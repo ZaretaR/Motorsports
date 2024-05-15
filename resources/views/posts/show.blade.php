@@ -30,7 +30,7 @@
             @endif
             <h2 class="post-title">{{ $post->title }}</h2>
             <p>{{ $post->created_at }}</p>
-            <img style="max-width:200px" src="{{ Storage::url('images/' . $post->image) }}">
+            <img style="max-width:300px" src="{{ Storage::url('images/' . $post->image) }}">
             <p class="post-description">{{ $post->description }}</p>
             <div class="post-buttons">
                 <a class="bewerken" href="{{ route('posts.edit', $post->id) }}">Bewerken</a>

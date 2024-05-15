@@ -44,6 +44,16 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    public function role()
+    {
+        return $this->belongsTo(UserRole::class, 'role_id', 'id');
+    }
+
+    public function isAdmin()
+    {
+        return $this->role->role_name === 'admin';
+    }
+
     public function likedPosts()
     {
         return $this->belongsToMany(Post::class, 'likes', 'user_id', 'post_id');

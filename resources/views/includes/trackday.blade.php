@@ -75,8 +75,5 @@
                 Met onze jarenlange ervaring, staan we jullie graag met raad en daad bij!
             </p>
         </div>
-        <div class="interesse-kalender">
-            <a href="{{ route('events') }}">Bekijk de kalender</a>
-        </div>
     </div>
 </section>

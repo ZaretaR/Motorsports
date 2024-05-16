@@ -461,8 +461,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
     /*KALENDER*/
     #calendar {
-        margin: 150px auto;
-        height: max-content;
+        margin: 120px auto;
     }
     .fc-icon {
         color: #2c2c2c;
@@ -957,7 +956,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
     /*KALENDER*/
     #calendar {
-        margin: 150px auto;
+        margin: 120px auto;
     }
     .fc-icon {
         color: #2c2c2c;
@@ -1512,7 +1511,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
     /*KALENDER*/
     #calendar {
-        margin: 150px auto;
+        margin: 120px auto;
     }
     .fc-icon {
         color: #2c2c2c;

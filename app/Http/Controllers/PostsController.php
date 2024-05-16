@@ -38,7 +38,7 @@ class PostsController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'image|mimes:jpeg,png,jpg|max:2048',
         ]);
 
         $userId = Auth::id();

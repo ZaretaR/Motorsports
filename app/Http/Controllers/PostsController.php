@@ -38,7 +38,7 @@ class PostsController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg|max:2048',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         $userId = Auth::id();
@@ -47,7 +47,7 @@ class PostsController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $fileName = time() . '_' . $image->getClientOriginalName();
-            $image->storeAs('public/images', $fileName);
+            $image->storeAs('storage/app/public/images', $fileName);
             $post->image = $fileName;
         }
         $post->description = $request->description;
@@ -98,7 +98,7 @@ class PostsController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $fileName = time() . '_' . $image->getClientOriginalName();
-            $image->storeAs('public/images', $fileName);
+            $image->storeAs('storage/app/public/images', $fileName);
             $post->image = $fileName;
         }
         $post->title = $request->title;

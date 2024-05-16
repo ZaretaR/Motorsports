@@ -30,7 +30,7 @@
             @endif
             <h2 class="post-title">{{ $post->title }}</h2>
             <p>{{ $post->created_at }}</p>
-            <img style="max-width:300px" src="{{ Storage::url('images/' . $post->image) }}">
+            <img style="max-width:300px" src="{{ Storage::url('storage/images/' . $post->image) }}">
             <p class="post-description">{{ $post->description }}</p>
             @if (auth()->user()->id == $post->user_id || auth()->user()->username === 'admin')
                 <div class="post-buttons">

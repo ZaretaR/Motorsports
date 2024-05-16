@@ -47,7 +47,7 @@ class PostsController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $fileName = time() . '_' . $image->getClientOriginalName();
-            $image->storeAs('storage/app/public/images', $fileName);
+            $image->storeAs('public/images', $fileName);
             $post->image = $fileName;
         }
         $post->description = $request->description;
@@ -98,7 +98,7 @@ class PostsController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $fileName = time() . '_' . $image->getClientOriginalName();
-            $image->storeAs('storage/app/public/images', $fileName);
+            $image->storeAs('public/images', $fileName);
             $post->image = $fileName;
         }
         $post->title = $request->title;
